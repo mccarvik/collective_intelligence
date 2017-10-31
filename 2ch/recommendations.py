@@ -103,12 +103,7 @@ def sim_pearson(prefs, p1, p2):
     return r
 
 
-def topMatches(
-    prefs,
-    person,
-    n=5,
-    similarity=sim_pearson,
-):
+def topMatches(prefs, person, n=5, similarity=sim_pearson):
     '''
     Returns the best matches for person from the prefs dictionary. 
     Number of results and similarity function are optional params.
@@ -233,3 +228,12 @@ def loadMovieLens(path='/data/movielens'):
         prefs.setdefault(user, {})
         prefs[user][movies[movieid]] = float(rating)
     return prefs
+
+
+if __name__ == "__main__":
+    print(sim_distance(critics, 'Toby', 'Lisa Rose'))
+    print(sim_pearson(critics, 'Toby', 'Lisa Rose'))
+    print(topMatches(critics, 'Toby', 3))
+    print(getRecommendations(critics, 'Toby'))
+    sim_items = calculateSimilarItems(critics)
+    
