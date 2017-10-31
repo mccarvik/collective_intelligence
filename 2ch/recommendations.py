@@ -234,6 +234,9 @@ if __name__ == "__main__":
     print(sim_distance(critics, 'Toby', 'Lisa Rose'))
     print(sim_pearson(critics, 'Toby', 'Lisa Rose'))
     print(topMatches(critics, 'Toby', 3))
+    print(topMatches(transformPrefs(critics), 'Superman Returns', 3))
     print(getRecommendations(critics, 'Toby'))
+    
+    
     sim_items = calculateSimilarItems(critics)
     
