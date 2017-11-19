@@ -237,6 +237,5 @@ if __name__ == "__main__":
     print(topMatches(transformPrefs(critics), 'Superman Returns', 3))
     print(getRecommendations(critics, 'Toby'))
     
-    
-    sim_items = calculateSimilarItems(critics)
+    print(calculateSimilarItems(critics))
     
