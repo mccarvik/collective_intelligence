@@ -51,21 +51,22 @@ class bicluster:
         self.id = id
         self.distance = distance
 
+
 def hcluster(rows, distance=pearson):
     distances = {}
     currentclustid = -1
 
-  # Clusters are initially just the rows
+    # Clusters are initially just the rows
     clust = [bicluster(rows[i], id=i) for i in range(len(rows))]
 
     while len(clust) > 1:
         lowestpair = (0, 1)
         closest = distance(clust[0].vec, clust[1].vec)
 
-    # loop through every pair looking for the smallest distance
+        # loop through every pair looking for the smallest distance
         for i in range(len(clust)):
             for j in range(i + 1, len(clust)):
-        # distances is the cache of distance calculations
+                # distances is the cache of distance calculations
                 if (clust[i].id, clust[j].id) not in distances:
                     distances[(clust[i].id, clust[j].id)] = \
                         distance(clust[i].vec, clust[j].vec)
@@ -76,16 +77,16 @@ def hcluster(rows, distance=pearson):
                     closest = d
                     lowestpair = (i, j)
 
-    # calculate the average of the two clusters
+        # calculate the average of the two clusters
         mergevec = [(clust[lowestpair[0]].vec[i] + clust[lowestpair[1]].vec[i])
                     / 2.0 for i in range(len(clust[0].vec))]
 
-    # create the new cluster
+        # create the new cluster
         newcluster = bicluster(mergevec, left=clust[lowestpair[0]],
                                right=clust[lowestpair[1]], distance=closest,
                                id=currentclustid)
 
-    # cluster ids that weren't in the original set are negative
+        # cluster ids that weren't in the original set are negative
         currentclustid -= 1
         del clust[lowestpair[1]]
         del clust[lowestpair[0]]
@@ -151,14 +152,7 @@ def drawdendrogram(clust, labels, jpeg='clusters.jpg'):
     draw.line((0, h / 2, 10, h / 2), fill=(255, 0, 0))
 
   # Draw the first node
-    drawnode(
-        draw,
-        clust,
-        10,
-        h / 2,
-        scaling,
-        labels,
-        )
+    drawnode(draw, clust, 10, h / 2, scaling, labels)
     img.save(jpeg, 'JPEG')
 
 
@@ -181,22 +175,8 @@ def drawnode(draw, clust, x, y, scaling, labels):
                   0))
 
     # Call the function to draw the left and right nodes
-        drawnode(
-            draw,
-            clust.left,
-            x + ll,
-            top + h1 / 2,
-            scaling,
-            labels,
-            )
-        drawnode(
-            draw,
-            clust.right,
-            x + ll,
-            bottom - h2 / 2,
-            scaling,
-            labels,
-            )
+        drawnode(draw, clust.left, x + ll, top + h1 / 2, scaling, labels)
+        drawnode(draw, clust.right, x + ll, bottom - h2 / 2, scaling, labels)
     else:
     # If this is an endpoint, draw the item label
         draw.text((x + 5, y - 7), labels[clust.id], (0, 0, 0))
@@ -211,20 +191,21 @@ def rotatematrix(data):
 
 
 def kcluster(rows, distance=pearson, k=4):
-  # Determine the minimum and maximum values for each point
+    # Determine the minimum and maximum values for each point
     ranges = [(min([row[i] for row in rows]), max([row[i] for row in rows]))
               for i in range(len(rows[0]))]
 
-  # Create k randomly placed centroids
+    # Create k randomly placed centroids
     clusters = [[random.random() * (ranges[i][1] - ranges[i][0]) + ranges[i][0]
                 for i in range(len(rows[0]))] for j in range(k)]
 
+    pdb.set_trace()
     lastmatches = None
     for t in range(100):
         print 'Iteration %d' % t
         bestmatches = [[] for i in range(k)]
 
-    # Find which centroid is the closest for each row
+        # Find which centroid is the closest for each row
         for j in range(len(rows)):
             row = rows[j]
             bestmatch = 0
@@ -234,12 +215,12 @@ def kcluster(rows, distance=pearson, k=4):
                     bestmatch = i
             bestmatches[bestmatch].append(j)
 
-    # If the results are the same as last time, this is complete
+        # If the results are the same as last time, this is complete
         if bestmatches == lastmatches:
             break
         lastmatches = bestmatches
 
-    # Move the centroids to the average of their members
+        # Move the centroids to the average of their members
         for i in range(k):
             avgs = [0.0] * len(rows[0])
             if len(bestmatches[i]) > 0:
@@ -340,3 +321,7 @@ if __name__ == '__main__':
     # rdata = rotatematrix(data)
     # wordclust = hcluster(rdata)
     # drawdendrogram(wordclust, words, jpeg='wordclust.jpg')
+    
+    print('Running k-clusters')
+    kclust = kcluster(data, k=10)
+    print([blognames[r] for r in kclust[0]])
