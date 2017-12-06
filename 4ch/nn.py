@@ -1,3 +1,4 @@
+import pdb
 from math import tanh
 from pysqlite2 import dbapi2 as sqlite
 
@@ -12,6 +13,9 @@ class searchnet:
       self.con.close()
 
     def maketables(self):
+      self.con.execute('drop table if exists hiddennode')
+      self.con.execute('drop table if exists wordhidden')
+      self.con.execute('drop table if exists hiddenurl')
       self.con.execute('create table hiddennode(create_key)')
       self.con.execute('create table wordhidden(fromid,toid,strength)')
       self.con.execute('create table hiddenurl(fromid,toid,strength)')
@@ -42,13 +46,11 @@ class searchnet:
       sorted_words=[str(id) for id in wordids]
       sorted_words.sort()
       createkey='_'.join(sorted_words)
-      res=self.con.execute(
-      "select rowid from hiddennode where create_key='%s'" % createkey).fetchone()
+      res=self.con.execute("select rowid from hiddennode where create_key='%s'" % createkey).fetchone()
 
       # If not, create it
       if res==None:
-        cur=self.con.execute(
-        "insert into hiddennode (create_key) values ('%s')" % createkey)
+        cur=self.con.execute("insert into hiddennode (create_key) values ('%s')" % createkey)
         hiddenid=cur.lastrowid
         # Put in some default weights
         for wordid in wordids:
@@ -89,6 +91,7 @@ class searchnet:
                    for hiddenid in self.hiddenids]
 
     def feedforward(self):
+        pdb.set_trace()
         # the only inputs are the query words
         for i in range(len(self.wordids)):
             self.ai[i] = 1.0
@@ -144,9 +147,11 @@ class searchnet:
       # generate a hidden node if necessary
       self.generatehiddennode(wordids,urlids)
 
+      pdb.set_trace()
       self.setupnetwork(wordids,urlids)      
       self.feedforward()
       targets=[0.0]*len(urlids)
+      pdb.set_trace()
       targets[urlids.index(selectedurl)]=1.0
       error = self.backPropagate(targets)
       self.updatedatabase()
@@ -164,7 +169,7 @@ class searchnet:
 
 if __name__ == '__main__':
     mynet = searchnet('nn.db')
-    # mynet.maketables()
+    mynet.maketables()
     wWorld, wRiver, wBank = 101, 102, 103
     uWorldBank, uRiver, uEarth = 201, 202, 203
     mynet.generatehiddennode([wWorld, wBank], [uWorldBank, uRiver, uEarth])
@@ -183,6 +188,7 @@ if __name__ == '__main__':
     
     # Neural Network Example
     allurls = [uWorldBank, uRiver, uEarth]
+    pdb.set_trace()
     for i in range(30):
         mynet.trainquery([wWorld, wBank], allurls, uWorldBank)
         mynet.trainquery([wRiver, wBank], allurls, uRiver)

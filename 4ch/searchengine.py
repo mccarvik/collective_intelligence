@@ -329,10 +329,10 @@ if __name__ == '__main__':
     # crwl.createindextables()
     
     ##### Add to Index Exercise #####
-    crwl = crawler('searchindex.db')
-    pages = ['https://en.wikipedia.org/wiki/Sport']
-    crwl.crawl(pages)
-    print([row for row in crwl.con.execute('select rowid from wordlocation where wordid=1')])
+    # crwl = crawler('searchindex.db')
+    # pages = ['https://en.wikipedia.org/wiki/Sport']
+    # crwl.crawl(pages)
+    # print([row for row in crwl.con.execute('select rowid from wordlocation where wordid=1')])
     
     ##### Query Demo #####
     # e = searcher('searchindex.db')
