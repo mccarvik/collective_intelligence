@@ -117,6 +117,7 @@ class searchnet:
       return self.feedforward()
 
     def backPropagate(self, targets, N=0.5):
+        pdb.set_trace()
         # calculate errors for output
         output_deltas = [0.0] * len(self.urlids)
         for k in range(len(self.urlids)):
