@@ -29,6 +29,7 @@ class searchnet:
         
         res=self.con.execute('select strength from %s where fromid=%d and toid=%d' % (table,fromid,toid)).fetchone()
         if res==None: 
+            # default values
             if layer==0: return -0.2
             if layer==1: return 0
         return res[0]
@@ -44,6 +45,8 @@ class searchnet:
             self.con.execute('update %s set strength=%f where rowid=%d' % (table,strength,rowid))
 
     def generatehiddennode(self,wordids,urls):
+      # Will generate a hidden node for every combination of inputs and possible outputs
+        
       if len(wordids)>3: return None
       # Check if we already created a node for this set of words
       sorted_words=[str(id) for id in wordids]
@@ -96,8 +99,9 @@ class searchnet:
         for i in range(len(self.wordids)):
             self.ai[i] = 1.0
 
+        # pdb.set_trace()
         # hidden activations
-        # equal to a sum of all node vales coming to them * input weights
+        # equal to a sum of all node values coming to them * input weights
         # and that sum placed in the activation function (in this case tanh)
         for j in range(len(self.hiddenids)):
             sum = 0.0
@@ -107,7 +111,7 @@ class searchnet:
 
         # output activations
         # equal to a sum of all node vales coming to them * output weights
-        # and that sum placed in the activation function (in this case tanh)
+        # and that sum placed in the activation (in this case tanh)
         for k in range(len(self.urlids)):
             sum = 0.0
             for j in range(len(self.hiddenids)):
@@ -121,10 +125,12 @@ class searchnet:
       return self.feedforward()
 
     def backPropagate(self, targets, N=0.5):
+        output_deltas = [0.0] * len(self.urlids)
+        
+        pdb.set_trace()
         # calculate errors for output
         # output deltas --> dtanh(node value) * (target input - node value)
         # output deltas --> basically how much our guesses were off by
-        output_deltas = [0.0] * len(self.urlids)
         for k in range(len(self.urlids)):
             error = targets[k]-self.ao[k]
             output_deltas[k] = dtanh(self.ao[k]) * error
@@ -154,7 +160,8 @@ class searchnet:
                 change = hidden_deltas[j]*self.ai[i]
                 self.wi[i][j] = self.wi[i][j] + N*change
 
-    def trainquery(self,wordids,urlids,selectedurl): 
+    def trainquery(self,wordids,urlids,selectedurl, p=True):
+        
         # generate a hidden node if necessary
         self.generatehiddennode(wordids,urlids)
         
@@ -163,24 +170,60 @@ class searchnet:
         self.feedforward()
         targets=[0.0]*len(urlids)
         
+        if p:
+            print("training input: " + str(wordids) + "    training outputs: " + str(urlids) + "    selected output: " + str(selectedurl))
+            print("Before:")
+            self.print_weights()
+        
         # Set the chosen url to 1 and the rest to 0 and pass that to backpropigation
         targets[urlids.index(selectedurl)]=1.0
         error = self.backPropagate(targets)
         self.updatedatabase()
-        self.net_update(wordids, urlids, selectedurl)
-        pdb.set_trace()
+        # self.net_update(wordids, urlids, selectedurl)
+        
+        if p:
+            self.print_weights()
+    
+    def print_weights(self):
+        print("input weights (row 1 => all weights from input node 1, etc):")
+        for i in self.wi:
+            inp_str = ""
+            for inp in i:
+                inp_str += str(round(inp, 4)) + ", "
+            inp_str = inp_str[:-2]
+            print(inp_str)
+        
+        print("output weights (row 1 => all weights from hidden node 1, etc)::")
+        for o in self.wo:
+            out_str = ""
+            for out in o:
+                out_str += str(round(out, 4)) + ", "
+            out_str = out_str[:-2]
+            print(out_str)
     
     def net_update(self, inputs, outputs, selected_output):
         print("training input: " + str(inputs) + "    training outputs: " + str(outputs) + "    selected output: " + str(selected_output))
-        print("input_nodes: " + str(self.ai))
-        print("hidden_nodes: " + str(self.ah))
-        print("output_nodes: " + str(self.ao))
-        print("input weights: ")
-        for wi in self.wi:
-            print(wi)
-        print("output weights: ")
-        for wo in self.wo:
-            print(wo)
+        print("input nodes \t hidden nodes \t output nodes")
+        mx = max([len(self.ai), len(self.ah), len(self.ao)])
+        for i in range(mx):
+            try:
+                ai = round(self.ai[i], 4)
+            except:
+                ai = "[null]"
+            
+            try:
+                ah = round(self.ah[i], 4)
+            except:
+                ah = "[null]"
+                
+            try:
+                ao = round(self.ao[i], 4)
+            except:
+                ao = "[null]"
+                
+            print(str(ai) + "\t\t" + str(ah) + "\t\t" + str(ao))
+
+        self.print_weights()
     
     def updatedatabase(self):
       # set them to database values
@@ -198,12 +241,7 @@ if __name__ == '__main__':
     mynet.maketables()
     wWorld, wRiver, wBank = 101, 102, 103
     uWorldBank, uRiver, uEarth = 201, 202, 203
-    mynet.generatehiddennode([wWorld, wBank], [uWorldBank, uRiver, uEarth])
-    for c in mynet.con.execute('select * from wordhidden'):
-        print(c)
-    
-    for c in mynet.con.execute('select * from hiddenurl'):
-        print(c)
+    # mynet.generatehiddennode([wWorld, wBank], [uWorldBank, uRiver, uEarth])
       
     # demo the getresult function  
     # print(mynet.getresult([wWorld, wBank], [uWorldBank, uRiver, uEarth]))
@@ -214,11 +252,20 @@ if __name__ == '__main__':
     
     # Neural Network Example
     allurls = [uWorldBank, uRiver, uEarth]
-    pdb.set_trace()
     for i in range(30):
+        pdb.set_trace()
         mynet.trainquery([wWorld, wBank], allurls, uWorldBank)
+        pdb.set_trace()
         mynet.trainquery([wRiver, wBank], allurls, uRiver)
+        pdb.set_trace()
         mynet.trainquery([wWorld], allurls, uEarth)
-    print(mynet.getresult([wWorld, wBank], allurls))
-    print(mynet.getresult([wRiver, wBank], allurls))
-    print(mynet.getresult([wBank], allurls))
+    # print(mynet.getresult([wWorld, wBank], allurls))
+    # print(mynet.getresult([wRiver, wBank], allurls))
+    # print(mynet.getresult([wBank], allurls))
+    
+    
+    for c in mynet.con.execute('select * from wordhidden'):
+        print(c)
+    
+    for c in mynet.con.execute('select * from hiddenurl'):
+        print(c)
