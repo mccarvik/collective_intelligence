@@ -127,7 +127,7 @@ class searchnet:
     def backPropagate(self, targets, N=0.5):
         output_deltas = [0.0] * len(self.urlids)
         
-        pdb.set_trace()
+        # pdb.set_trace()
         # calculate errors for output
         # output deltas --> dtanh(node value) * (target input - node value)
         # output deltas --> basically how much our guesses were off by
@@ -161,7 +161,6 @@ class searchnet:
                 self.wi[i][j] = self.wi[i][j] + N*change
 
     def trainquery(self,wordids,urlids,selectedurl, p=True):
-        
         # generate a hidden node if necessary
         self.generatehiddennode(wordids,urlids)
         
@@ -182,24 +181,34 @@ class searchnet:
         # self.net_update(wordids, urlids, selectedurl)
         
         if p:
+            print("After:")
             self.print_weights()
+    
+    def get_hidden_key(self, hidden_id):
+        return self.con.execute("select create_key from hiddennode where rowid='%s'" % hidden_id).fetchone()
     
     def print_weights(self):
         print("input weights (row 1 => all weights from input node 1, etc):")
+        
+        k = 0
         for i in self.wi:
-            inp_str = ""
+            inp_str = str(self.wordids[k]) + ": "
             for inp in i:
                 inp_str += str(round(inp, 4)) + ", "
             inp_str = inp_str[:-2]
             print(inp_str)
+            k += 1
         
+        k = 0
         print("output weights (row 1 => all weights from hidden node 1, etc)::")
         for o in self.wo:
-            out_str = ""
+            out_str = str(self.get_hidden_key(self.hiddenids[k])[0]) + ": "
+            # out_str = str(self.hiddenids[k]) + ": "
             for out in o:
                 out_str += str(round(out, 4)) + ", "
             out_str = out_str[:-2]
             print(out_str)
+            k += 1
     
     def net_update(self, inputs, outputs, selected_output):
         print("training input: " + str(inputs) + "    training outputs: " + str(outputs) + "    selected output: " + str(selected_output))
