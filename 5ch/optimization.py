@@ -6,6 +6,7 @@ people = [('Seymour','BOS'),
           ('Walt','MIA'),
           ('Buddy','ORD'),
           ('Les','OMA')]
+          
 # Laguardia
 destination='LGA'
 
@@ -33,7 +34,6 @@ def printschedule(r):
                                                       ret[0],ret[1],ret[2])
 
 def schedulecost(sol):
-  pdb.set_trace()
   totalprice=0
   latestarrival=0
   earliestdep=24*60
@@ -201,9 +201,10 @@ def geneticoptimize(domain,costf,popsize=50,step=1,mutprod=0.2,elite=0.2,maxiter
   
 
 if __name__ == '__main__':
-    s = [1,4,3,2,7,3,6,3,2,4,5,3]
-    printschedule(s)
-    print(schedulecost(s))
+    # test printschedule functionality
+    # s = [1,4,3,2,7,3,6,3,2,4,5,3]
+    # printschedule(s)
+    # print(schedulecost(s))
   
     domain=[(0,9)]*(len(people)*2)
     s = randomoptimize(domain,schedulecost)
