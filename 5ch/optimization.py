@@ -68,7 +68,6 @@ def schedulecost(sol):
   return totalprice+totalwait
 
 def randomoptimize(domain,costf):
-  pdb.set_trace()
   best=999999999
   bestr=None
   for i in range(0,1000):
@@ -89,6 +88,7 @@ def hillclimb(domain,costf):
   # Create a random solution
   sol=[random.randint(domain[i][0],domain[i][1])
       for i in range(len(domain))]
+  
   # Main loop
   while 1:
     # Create list of neighboring solutions
@@ -96,9 +96,9 @@ def hillclimb(domain,costf):
     
     for j in range(len(domain)):
       # One away in each direction
-      if sol[j]>domain[j][0]:
+      if sol[j]>domain[j][0] and sol[j] != 9:
         neighbors.append(sol[0:j]+[sol[j]+1]+sol[j+1:])
-      if sol[j]<domain[j][1]:
+      if sol[j]<domain[j][1] and sol[j] != 0:
         neighbors.append(sol[0:j]+[sol[j]-1]+sol[j+1:])
 
     # See what the best solution amongst the neighbors is
@@ -207,6 +207,14 @@ if __name__ == '__main__':
     # print(schedulecost(s))
   
     domain=[(0,9)]*(len(people)*2)
+    # Random guesses at optimal solution
     s = randomoptimize(domain,schedulecost)
     print(schedulecost(s))
+    
+    # Hill climbing approach
+    s = hillclimb(domain, schedulecost)
+    print(schedulecost(s))
   
+    # Annealing Approach
+    s = annealingoptimize(domain, schedulecost)
+    print(schedulecost(s))
