@@ -120,6 +120,7 @@ def annealingoptimize(domain,costf,T=10000.0,cool=0.95,step=1):
   vec=[float(random.randint(domain[i][0],domain[i][1])) 
        for i in range(len(domain))]
   
+  pdb.set_trace()
   while T>0.1:
     # Choose one of the indices
     i=random.randint(0,len(domain)-1)
@@ -127,19 +128,24 @@ def annealingoptimize(domain,costf,T=10000.0,cool=0.95,step=1):
     # Choose a direction to change it
     dir=random.randint(-step,step)
 
-    # Create a new list with one of the values changed
+    # Create a new list with the randomly chosen value and direction changed
     vecb=vec[:]
     vecb[i]+=dir
+    # Check to keep vecb vals in allowable range
     if vecb[i]<domain[i][0]: vecb[i]=domain[i][0]
     elif vecb[i]>domain[i][1]: vecb[i]=domain[i][1]
 
     # Calculate the current cost and the new cost
     ea=costf(vec)
     eb=costf(vecb)
-    p=pow(math.e,(-eb-ea)/T)
-
-    # Is it better, or does it make the probability
-    # cutoff?
+    
+    # Calculate the probability of accepting change
+    # 1. This number will give the probability of randomly accepting the new vector even if it is worse to combat local minima problem
+    # 2. T gets a little smaller each iteration, making the probability less and less likely as time goes on
+    # 3. The larger the the difference between worst and best solution, the less likely algo is to accept worse solution
+    p=pow(math.e,-(eb-ea)/T)
+    
+    # If the new value is better OR p high enough to randomly accept suboptimal solution
     if (eb<ea or random.random()<p):
       vec=vecb      
 
@@ -208,8 +214,8 @@ if __name__ == '__main__':
   
     domain=[(0,9)]*(len(people)*2)
     # Random guesses at optimal solution
-    s = randomoptimize(domain,schedulecost)
-    print(schedulecost(s))
+    # s = randomoptimize(domain,schedulecost)
+    # print(schedulecost(s))
     
     # Hill climbing approach
     s = hillclimb(domain, schedulecost)
