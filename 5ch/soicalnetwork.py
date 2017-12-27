@@ -1,4 +1,5 @@
 import math, pdb, optimization
+from PIL import Image,ImageDraw
 
 people=['Charlie','Augustus','Veruca','Violet','Mike','Joe','Willy','Miranda']
 
@@ -17,6 +18,7 @@ links=[('Augustus', 'Willy'),
 
 
 def crosscount(v):
+  pdb.set_trace()
   # Convert the number list into a dictionary of person:(x,y)
   loc=dict([(people[i],(v[i*2],v[i*2+1])) for i in range(0,len(people))])
   total=0
@@ -55,7 +57,6 @@ def crosscount(v):
           total+=(1.0-(dist/50.0))
         
   return total
-from PIL import Image,ImageDraw
 
 def drawnetwork(sol):
   # Create the image
@@ -72,7 +73,6 @@ def drawnetwork(sol):
     draw.text(p,n,(0,0,0))
 
   img.save('scoial_network.jpg', 'JPEG')
-
   img.show()
 
 

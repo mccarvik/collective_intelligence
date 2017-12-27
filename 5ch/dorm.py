@@ -36,6 +36,7 @@ def printsolution(vec):
     del slots[x]
 
 def dormcost(vec):
+  pdb.set_trace()
   cost=0
   # Create list a of slots
   slots=[0,0,1,1,2,2,3,3,4,4]
@@ -43,6 +44,9 @@ def dormcost(vec):
   # Loop over each student
   for i in range(len(vec)):
     x=int(vec[i])
+    
+    # The selection of vec in slots is going to be in relation to what is left in slot
+    # EX: vec could have 4 0's as that will be the fist number in slots which will keep changing
     dorm=dorms[slots[x]]
     pref=prefs[i][1]
     # First choice costs 0, second choice costs 1
