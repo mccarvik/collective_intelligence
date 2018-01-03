@@ -78,9 +78,9 @@ class classifier:
 
   def fprob(self,f,cat):
     if self.catcount(cat)==0: return 0
-
     # The total number of times this feature appeared in this 
     # category divided by the total number of items in this category
+    # P(A|B)
     return self.fcount(f,cat)/self.catcount(cat)
 
   def weightedprob(self,f,cat,prf,weight=1.0,ap=0.5):
@@ -216,4 +216,4 @@ if __name__ == '__main__':
     
     # Probability demo
     sampletrain(cl)
-    cl.fprob('quick', 'good')
+    print(cl.fprob('quick', 'good'))
