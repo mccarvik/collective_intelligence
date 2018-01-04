@@ -3,7 +3,7 @@ import re, math, pdb
 
 def getwords(doc):
   splitter=re.compile('\\W*')
-  print doc
+  # print doc
   # Split the words by non-alpha characters
   words=[s.lower() for s in splitter.split(doc) 
           if len(s)>2 and len(s)<20]
@@ -20,25 +20,22 @@ class classifier:
     self.getfeatures=getfeatures
     
   def setdb(self,dbfile):
-    self.con=sqlite.connect(dbfile)    
+    self.con=sqlite.connect(dbfile)  
+    self.con.execute('drop table if exists fc')
+    self.con.execute('drop table if exists cc')
     self.con.execute('create table if not exists fc(feature,category,count)')
     self.con.execute('create table if not exists cc(category,count)')
-
 
   def incf(self,f,cat):
     count=self.fcount(f,cat)
     if count==0:
-      self.con.execute("insert into fc values ('%s','%s',1)" 
-                       % (f,cat))
+      self.con.execute("insert into fc values ('%s','%s',1)" % (f,cat))
     else:
-      self.con.execute(
-        "update fc set count=%d where feature='%s' and category='%s'" 
-        % (count+1,f,cat)) 
+      self.con.execute("update fc set count=%d where feature='%s' and category='%s'" % (count+1,f,cat)) 
   
   def fcount(self,f,cat):
     res=self.con.execute(
-      'select count from fc where feature="%s" and category="%s"'
-      %(f,cat)).fetchone()
+      'select count from fc where feature="%s" and category="%s"' % (f,cat)).fetchone()
     if res==None: return 0
     else: return float(res[0])
 
@@ -47,12 +44,10 @@ class classifier:
     if count==0:
       self.con.execute("insert into cc values ('%s',1)" % (cat))
     else:
-      self.con.execute("update cc set count=%d where category='%s'" 
-                       % (count+1,cat))    
+      self.con.execute("update cc set count=%d where category='%s'" % (count+1,cat))    
 
   def catcount(self,cat):
-    res=self.con.execute('select count from cc where category="%s"'
-                         %(cat)).fetchone()
+    res=self.con.execute('select count from cc where category="%s"' % (cat)).fetchone()
     if res==None: return 0
     else: return float(res[0])
 
@@ -64,7 +59,6 @@ class classifier:
     res=self.con.execute('select sum(count) from cc').fetchone();
     if res==None: return 0
     return res[0]
-
 
   def train(self,item,cat):
     features=self.getfeatures(item)
@@ -78,9 +72,9 @@ class classifier:
 
   def fprob(self,f,cat):
     if self.catcount(cat)==0: return 0
+
     # The total number of times this feature appeared in this 
     # category divided by the total number of items in this category
-    # P(A|B)
     return self.fcount(f,cat)/self.catcount(cat)
 
   def weightedprob(self,f,cat,prf,weight=1.0,ap=0.5):
@@ -94,8 +88,6 @@ class classifier:
     # Calculate the weighted average
     bp=((weight*ap)+(totals*basicprob))/(weight+totals)
     return bp
-
-
 
 
 class naivebayes(classifier):
@@ -205,8 +197,11 @@ def sampletrain(cl):
   
 
 if __name__ == '__main__':
-    cl = classifier(getwords)
+    # cl = classifier(getwords)
+    # cl = naivebayes(getwords)
+    cl = fisherclassifier(getwords)
     cl.setdb('test1.db')
+    sampletrain(cl)
     
     # First demo
     # cl.train('the quick brown fox jumps over the lazy dog', 'good')
@@ -215,5 +210,27 @@ if __name__ == '__main__':
     # print(cl.fcount('quick', 'bad'))
     
     # Probability demo
-    sampletrain(cl)
-    print(cl.fprob('quick', 'good'))
+    # cl.fprob('quick', 'good')
+    
+    # Weighted Prob Demo
+    # print(cl.weightedprob('money', 'good', cl.fprob))
+    # sampletrain(cl)
+    # print(cl.weightedprob('money', 'good', cl.fprob))
+    
+    # Bayes Demo
+    # print(cl.prob('quick rabbit', 'good'))
+    # print(cl.prob('quick rabbit', 'bad'))
+    
+    # Threshold Demo
+    # print(cl.classify('quick rabbit', default='unknown'))
+    # print(cl.classify('quick money', default='unknown'))
+    # cl.setthreshold('bad', 3.0)
+    # print(cl.classify('quick money', default='unknown'))
+    # for i in range(10): 
+    #   sampletrain(cl)
+    # print(cl.classify('quick money', default='unknown'))
+    
+    # Fisher Demo
+    print(cl.cprob('quick', 'good'))
+    print(cl.cprob('quick', 'bad'))
+    print(cl.weightedprob('money', 'bad', cl.cprob))
