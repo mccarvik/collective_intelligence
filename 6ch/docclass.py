@@ -3,7 +3,7 @@ import re, math, pdb
 
 def getwords(doc):
   splitter=re.compile('\\W*')
-  # print doc
+  print(doc)
   # Split the words by non-alpha characters
   words=[s.lower() for s in splitter.split(doc) 
           if len(s)>2 and len(s)<20]
@@ -70,6 +70,7 @@ class classifier:
     self.incc(cat)
     self.con.commit()
 
+  # P(f|cat) --> probability of f, given cat
   def fprob(self,f,cat):
     if self.catcount(cat)==0: return 0
 
@@ -145,7 +146,9 @@ class fisherclassifier(classifier):
     # the overall frequency
     p=clf/(freqsum)
     
+    # odds its in this category / sum of odds its in each category
     return p
+  
   def fisherprob(self,item,cat):
     # Multiply all the probabilities together
     p=1
@@ -158,6 +161,7 @@ class fisherclassifier(classifier):
 
     # Use the inverse chi2 function to get a probability
     return self.invchi2(fscore,len(features)*2)
+  
   def invchi2(self,chi, df):
     m = chi / 2.0
     sum = term = math.exp(-m)
@@ -165,6 +169,7 @@ class fisherclassifier(classifier):
         term *= m / i
         sum += term
     return min(sum, 1.0)
+    
   def __init__(self,getfeatures):
     classifier.__init__(self,getfeatures)
     self.minimums={}
@@ -175,6 +180,7 @@ class fisherclassifier(classifier):
   def getminimum(self,cat):
     if cat not in self.minimums: return 0
     return self.minimums[cat]
+    
   def classify(self,item,default=None):
     # Loop through looking for the best result
     best=default
@@ -231,6 +237,9 @@ if __name__ == '__main__':
     # print(cl.classify('quick money', default='unknown'))
     
     # Fisher Demo
-    print(cl.cprob('quick', 'good'))
-    print(cl.cprob('quick', 'bad'))
-    print(cl.weightedprob('money', 'bad', cl.cprob))
+    # print(cl.cprob('quick', 'good'))
+    # print(cl.cprob('quick', 'bad'))
+    # print(cl.weightedprob('money', 'bad', cl.cprob))
+    
+    # Combining Probabilities
+    
