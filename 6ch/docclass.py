@@ -1,9 +1,10 @@
 from pysqlite2 import dbapi2 as sqlite
 import re, math, pdb
+import feedfilter
 
 def getwords(doc):
   splitter=re.compile('\\W*')
-  print(doc)
+  # print(doc)
   # Split the words by non-alpha characters
   words=[s.lower() for s in splitter.split(doc) 
           if len(s)>2 and len(s)<20]
@@ -134,6 +135,7 @@ class naivebayes(classifier):
     return best
 
 class fisherclassifier(classifier):
+  
   def cprob(self,f,cat):
     # The frequency of this feature in this category    
     clf=self.fprob(f,cat)
@@ -149,6 +151,7 @@ class fisherclassifier(classifier):
     # odds its in this category / sum of odds its in each category
     return p
   
+  # TODO: Returns the probability of item in cat. No idea how the natural log or chi squared part works
   def fisherprob(self,item,cat):
     # Multiply all the probabilities together
     p=1
@@ -206,8 +209,9 @@ if __name__ == '__main__':
     # cl = classifier(getwords)
     # cl = naivebayes(getwords)
     cl = fisherclassifier(getwords)
-    cl.setdb('test1.db')
-    sampletrain(cl)
+    # cl.setdb('test1.db')
+    cl.setdb('python_feed.db')
+    # sampletrain(cl)
     
     # First demo
     # cl.train('the quick brown fox jumps over the lazy dog', 'good')
@@ -242,4 +246,22 @@ if __name__ == '__main__':
     # print(cl.weightedprob('money', 'bad', cl.cprob))
     
     # Combining Probabilities
+    # print(cl.cprob('quick', 'good'))
+    # print(cl.fisherprob('quick rabbit', 'good'))
+    # print(cl.fisherprob('quick rabbit', 'bad'))
     
+    # Classifiers
+    # print(cl.classify('quick rabbit'))
+    # print(cl.classify('quick money'))
+    # cl.setminimum('bad', 0.8)
+    # print(cl.classify('quick money'))
+    # cl.setminimum('good', 0.5)
+    # print(cl.classify('quick money'))
+    
+    # Feed Filter
+    feedfilter.read('python_search.xml', cl)
+    print(cl.cprob('python', 'prog'))
+    print(cl.cprob('python', 'snake'))
+    print(cl.cprob('python', 'monty'))
+    print(cl.cprob('eric', 'monty'))
+    print(cl.fprob('eric', 'monty'))
