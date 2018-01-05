@@ -6,8 +6,8 @@ def getwords(doc):
   splitter=re.compile('\\W*')
   # print(doc)
   # Split the words by non-alpha characters
-  words=[s.lower() for s in splitter.split(doc) 
-          if len(s)>2 and len(s)<20]
+  pdb.set_trace()
+  words=[s.lower() for s in splitter.split(doc) if len(s)>2 and len(s)<20]
   
   # Return the unique set of words only
   return dict([(w,1) for w in words])
@@ -208,7 +208,7 @@ def sampletrain(cl):
 if __name__ == '__main__':
     # cl = classifier(getwords)
     # cl = naivebayes(getwords)
-    cl = fisherclassifier(getwords)
+    cl = fisherclassifier(feedfilter.entryfeatures)
     # cl.setdb('test1.db')
     cl.setdb('python_feed.db')
     # sampletrain(cl)
