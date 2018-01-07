@@ -208,6 +208,7 @@ def sampletrain(cl):
 if __name__ == '__main__':
     # cl = classifier(getwords)
     # cl = naivebayes(getwords)
+    # cl = fisherclassifier(getwords)
     cl = fisherclassifier(feedfilter.entryfeatures)
     # cl.setdb('test1.db')
     cl.setdb('python_feed.db')
@@ -259,9 +260,13 @@ if __name__ == '__main__':
     # print(cl.classify('quick money'))
     
     # Feed Filter
+    # feedfilter.read('python_search.xml', cl)
+    # print(cl.cprob('python', 'prog'))
+    # print(cl.cprob('python', 'snake'))
+    # print(cl.cprob('python', 'monty'))
+    # print(cl.cprob('eric', 'monty'))
+    # print(cl.fprob('eric', 'monty'))
+    
+    # Feature Detection
     feedfilter.read('python_search.xml', cl)
-    print(cl.cprob('python', 'prog'))
-    print(cl.cprob('python', 'snake'))
-    print(cl.cprob('python', 'monty'))
-    print(cl.cprob('eric', 'monty'))
-    print(cl.fprob('eric', 'monty'))
+    

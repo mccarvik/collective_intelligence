@@ -1,8 +1,9 @@
 import feedparser
-import re
+import re, pdb
 
 # Takes a filename of URL of a blog feed and classifies the entries
 def read(feed,classifier):
+  pdb.set_trace()
   # Get feed entries and loop over them
   f=feedparser.parse(feed)
   for entry in f['entries']:
@@ -27,6 +28,7 @@ def read(feed,classifier):
 
 
 def entryfeatures(entry):
+  pdb.set_trace()
   splitter=re.compile('\\W*')
   f={}
   
