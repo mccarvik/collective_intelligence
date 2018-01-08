@@ -29,7 +29,6 @@ class decisionnode:
 
 # Divides a set on a specific column. Can handle numeric or nominal values
 def divideset(rows,column,value):
-  pdb.set_trace()
   # Make a function that tells us if a row is in 
   # the first group (true) or the second group (false)
   split_function=None
@@ -54,9 +53,11 @@ def uniquecounts(rows):
       results[r]+=1
    return results
 
+# THESE MEASURE "mixedupness", lower values are better, try to find the factors that lower the value the most, i.i. most information gain
+
 # Probability that a randomly placed item will be in the wrong category
+# The Sum of (every combination of outcome probabilities, multiplied)
 def giniimpurity(rows):
-  pdb.set_trace()
   total=len(rows)
   counts=uniquecounts(rows)
   imp=0
@@ -70,7 +71,6 @@ def giniimpurity(rows):
 
 # Entropy is the sum of p(x)log(p(x)) across all the different possible results
 def entropy(rows):
-  pdb.set_trace()
   log2=lambda x:log(x)/log(2)  
   results=uniquecounts(rows)
   # Now calculate the entropy
@@ -264,4 +264,4 @@ if __name__ == '__main__':
     print(entropy(my_data))
     set1, set2 = divideset(my_data, 2, 'yes')
     print(entropy(set1))
-    print(giniimpurity(set2))
+    print(giniimpurity(set1))
