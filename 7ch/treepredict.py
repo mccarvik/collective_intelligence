@@ -82,18 +82,18 @@ def entropy(rows):
 
 
 def printtree(tree,indent=''):
-   # Is this a leaf node?
-   if tree.results!=None:
-      print str(tree.results)
-   else:
-      # Print the criteria
-      print str(tree.col)+':'+str(tree.value)+'? '
+  # Is this a leaf node?
+  if tree.results!=None:
+    print str(tree.results)
+  else:
+    # Print the criteria
+    print str(tree.col)+':'+str(tree.value)+'? '
 
-      # Print the branches
-      print indent+'T->',
-      printtree(tree.tb,indent+'  ')
-      print indent+'F->',
-      printtree(tree.fb,indent+'  ')
+    # Print the branches
+    print indent+'T->',
+    printtree(tree.tb,indent+'  ')
+    print indent+'F->',
+    printtree(tree.fb,indent+'  ')
 
 
 def getwidth(tree):
@@ -227,18 +227,19 @@ def buildtree(rows,scoref=entropy):
   
   column_count=len(rows[0])-1
   for col in range(0,column_count):
-    # Generate the list of different values in
-    # this column
+    # Generate the list of different values in this column
     column_values={}
     for row in rows:
        column_values[row[col]]=1
-    # Now try dividing the rows up for each value
-    # in this column
+    # Now try dividing the rows up for each value in this column
     for value in column_values.keys():
+      # divide the rows up for each value in this column
+      # set 1: where given col = given value,   set 2: where it does not
       (set1,set2)=divideset(rows,col,value)
       
-      # Information gain
+      # And see how much Information gain from this split
       p=float(len(set1))/len(rows)
+      # Information Gain = weighted average of two sets
       gain=current_score-p*scoref(set1)-(1-p)*scoref(set2)
       if gain>best_gain and len(set1)>0 and len(set2)>0:
         best_gain=gain
@@ -251,6 +252,7 @@ def buildtree(rows,scoref=entropy):
     return decisionnode(col=best_criteria[0],value=best_criteria[1],
                         tb=trueBranch,fb=falseBranch)
   else:
+    # base case when no more information to be gained
     return decisionnode(results=uniquecounts(rows))
     
 
@@ -260,8 +262,13 @@ if __name__ == '__main__':
     # print(divideset(my_data, 2, 'yes'))
     
     # Choosing the Best Split
-    print(giniimpurity(my_data))
-    print(entropy(my_data))
-    set1, set2 = divideset(my_data, 2, 'yes')
-    print(entropy(set1))
-    print(giniimpurity(set1))
+    # print(giniimpurity(my_data))
+    # print(entropy(my_data))
+    # set1, set2 = divideset(my_data, 2, 'yes')
+    # print(entropy(set1))
+    # print(giniimpurity(set1))
+    
+    # Tree Building
+    tree = buildtree(my_data)
+    printtree(tree)
+    drawtree(tree, jpeg='treeview.jpg')
