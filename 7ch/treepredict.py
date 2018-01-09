@@ -143,6 +143,7 @@ def drawnode(draw,tree,x,y):
 
 
 def classify(observation,tree):
+  pdb.set_trace()
   if tree.results!=None:
     return tree.results
   else:
@@ -270,5 +271,5 @@ if __name__ == '__main__':
     
     # Tree Building
     tree = buildtree(my_data)
-    printtree(tree)
     drawtree(tree, jpeg='treeview.jpg')
+    print(classify(['(direct)', 'USA', 'yes', 5], tree))
