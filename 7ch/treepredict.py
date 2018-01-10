@@ -165,8 +165,7 @@ def prune(tree,mingain):
   if tree.fb.results==None:
     prune(tree.fb,mingain)
     
-  # If both the subbranches are now leaves, see if they
-  # should merged
+  # If both the subbranches are now leaves, see if they should merged
   if tree.tb.results!=None and tree.fb.results!=None:
     # Build a combined dataset
     tb,fb=[],[]
@@ -178,8 +177,8 @@ def prune(tree,mingain):
     # Test the reduction in entropy
     delta=entropy(tb+fb)-(entropy(tb)+entropy(fb)/2)
 
+    # If information gain isnt over the threshold, merge the branches
     if delta<mingain:
-      # Merge the branches
       tree.tb,tree.fb=None,None
       tree.results=uniquecounts(tb+fb)
 
@@ -270,6 +269,16 @@ if __name__ == '__main__':
     # print(giniimpurity(set1))
     
     # Tree Building
-    tree = buildtree(my_data)
-    drawtree(tree, jpeg='treeview.jpg')
-    print(classify(['(direct)', 'USA', 'yes', 5], tree))
+    # tree = buildtree(my_data)
+    # drawtree(tree, jpeg='treeview.jpg')
+    # print(classify(['(direct)', 'USA', 'yes', 5], tree))
+    
+    # Pruning the Tree
+    # tree = buildtree(my_data)
+    # printtree(tree)
+    # prune(tree, 0.1)
+    # printtree(tree)
+    # prune(tree, 1.0)
+    # printtree(tree)
+    
+    # Dealing with Missing Data
