@@ -189,6 +189,7 @@ def mdclassify(observation,tree):
   else:
     v=observation[tree.col]
     if v==None:
+      # Have no info for this branch, Check both sub branches and weight the results
       tr,fr=mdclassify(observation,tree.tb),mdclassify(observation,tree.fb)
       tcount=sum(tr.values())
       fcount=sum(fr.values())
@@ -282,3 +283,6 @@ if __name__ == '__main__':
     # printtree(tree)
     
     # Dealing with Missing Data
+    tree = buildtree(my_data)
+    print(mdclassify(['google', None, 'yes', None], tree))
+    print(mdclassify(['google', 'France', None, None], tree))
