@@ -12,7 +12,7 @@ destination='LGA'
 
 flights={}
 # 
-for line in file('schedule.txt'):
+for line in file('/home/ubuntu/workspace/collective_intelligence/ch5/schedule.txt'):
     origin,dest,depart,arrive,price=line.strip().split(',')
     flights.setdefault((origin,dest),[])
   
@@ -145,6 +145,7 @@ def annealingoptimize(domain,costf,T=10000.0,cool=0.95,step=1):
 
     # Decrease the temperature
     T=T*cool
+    print(T)
   return vec
 
 def geneticoptimize(domain,costf,popsize=50,step=1,mutprob=0.2,elite=0.2,maxiter=100):
@@ -197,7 +198,7 @@ def geneticoptimize(domain,costf,popsize=50,step=1,mutprob=0.2,elite=0.2,maxiter
         pop.append(crossover(ranked[c1],ranked[c2]))
     
     # Print current best score
-    # print scores[0][0]
+    print scores[0][0]
     
   return scores[0][1]
   

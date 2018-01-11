@@ -1,5 +1,7 @@
 from random import random, randint
-import math, pdb
+import math, pdb, sys
+sys.path.append("/home/ubuntu/workspace/collective_intelligence")
+from ch5 import optimization
 from pylab import *
 
 def wineprice(rating,age):
@@ -38,6 +40,7 @@ def wineset1():
   return rows
 
 
+# Pythagorean Theorem
 def euclidean(v1,v2):
   d=0.0
   for i in range(len(v1)):
@@ -99,6 +102,7 @@ def weightedknn(data,vec1,k=5,weightf=gaussian):
     dist=dlist[i][0]
     idx=dlist[i][1]
     weight=weightf(dist)
+    # Adds up all the results and multiplies more for closer data points, than averages over all the k nodes
     avg+=weight*data[idx]['result']
     totalweight+=weight
   if totalweight==0: return 0
@@ -122,8 +126,6 @@ def testalgorithm(algf,trainset,testset):
   for row in testset:
     guess=algf(trainset,row['input'])
     error+=(row['result']-guess)**2
-    #print row['result'],guess
-  #print error/len(testset)
   return error/len(testset)
 
 
@@ -227,11 +229,64 @@ def probabilitygraph(data,vec1,high,k=5,weightf=gaussian,ss=5.0):
   plot(t1,smoothed)
   show()
   
-  
+
 if __name__ == '__main__':
-    print(wineprice(95.0, 3.0))
-    print(wineprice(95.0, 8.0))
-    print(wineprice(95.0, 1.0))
-    data = wineset1()
-    print(data[0])
-    print(data[1])
+    # data = wineset1()
+    data = wineset2()
+
+    # Original testing
+    # print(wineprice(95.0, 3.0))
+    # print(wineprice(95.0, 8.0))
+    # print(wineprice(95.0, 1.0))
+    # print(data[0])
+    # print(data[1])
+    
+    # Defining Similarity
+    # print(data[0]['input'])
+    # print(data[1]['input'])
+    # print(knnestimate(data, (95.0, 3.0)))
+    # print(knnestimate(data, (99.0, 3.0)))
+    # print(knnestimate(data, (99.0, 5.0)))
+    # print(wineprice(99, 5.0))
+    # print(knnestimate(data, (99.0, 5.0), k=1))
+    
+    # Weighted Neighbors
+    # print(subtractweight(0.1))
+    # print(inverseweight(0.1))
+    # print(gaussian(0.1))
+    # print(gaussian(1))
+    # print(subtractweight(1.0))
+    # print(inverseweight(1))
+    # print(gaussian(3))
+    # print(weightedknn(data, (99.0, 5.0)))
+    
+    
+    # Cross Validation
+    # print(crossvalidate(knnestimate, data))
+    # knn3 = lambda d, v: knnestimate(d, v, k=3)
+    # print(crossvalidate(knn3, data))
+    # knn1 = lambda d, v: knnestimate(d, v, k=1)
+    # print(crossvalidate(knn1, data))
+    # print(crossvalidate(weightedknn, data))
+    # knninverse = lambda d, v: weightedknn(d, v, weightf=inverseweight)
+    # print(crossvalidate(knninverse, data))
+    
+    # Scaling Variables
+    # knn3 = lambda d, v: knnestimate(d, v, k=3)
+    # print(crossvalidate(knn3, data))
+    # print(crossvalidate(weightedknn, data))
+    
+    # sdata = rescale(data, [10, 10, 0, 0.5])
+    # print(crossvalidate(knn3, sdata))
+    # print(crossvalidate(weightedknn, sdata))
+    
+    # Optimization
+    # costf = createcostfunction(knnestimate,data)
+    # print(optimization.annealingoptimize(weightdomain, costf, step=2))
+    # print(optimization.geneticoptimize(weightdomain, costf, popsize=5, elite=0.2, maxiter=20))
+    
+    # Uneven Distributions
+    data = wineset3()
+    print(wineprice(99.0, 20.0))
+    print(weightedknn(data, [99.0, 20.0]))
+    print(crossvalidate(weightedknn, data))
