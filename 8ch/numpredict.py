@@ -1,8 +1,12 @@
 from random import random, randint
 import math, pdb, sys
 sys.path.append("/home/ubuntu/workspace/collective_intelligence")
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pyplot as plt
 from ch5 import optimization
 from pylab import *
+
 
 def wineprice(rating,age):
   peak_age=rating-50
@@ -179,6 +183,7 @@ def wineset3():
   return rows
 
 
+# Returns the probability that the price is in the range specified based on the nearby nodes
 def probguess(data,vec1,low,high,k=5,weightf=gaussian):
   dlist=getdistances(data,vec1)
   nweight=0.0
@@ -196,16 +201,17 @@ def probguess(data,vec1,low,high,k=5,weightf=gaussian):
     tweight+=weight
   if tweight==0: return 0
   
-  # The probability is the weights in the range
-  # divided by all the weights
+  # The probability is the weights in the range divided by all the weights
   return nweight/tweight
 
 
 def cumulativegraph(data,vec1,high,k=5,weightf=gaussian):
   t1=arange(0.0,high,0.1)
   cprob=array([probguess(data,vec1,0,v,k,weightf) for v in t1])
-  plot(t1,cprob)
-  show()
+  plt.plot(t1,cprob)
+  plt.ylim(0,1)
+  plt.savefig('/home/ubuntu/workspace/collective_intelligence/8ch/cum_density.jpg')
+  plt.close()
 
 
 def probabilitygraph(data,vec1,high,k=5,weightf=gaussian,ss=5.0):
@@ -220,6 +226,7 @@ def probabilitygraph(data,vec1,high,k=5,weightf=gaussian,ss=5.0):
   for i in range(len(probs)):
     sv=0.0
     for j in range(0,len(probs)):
+      # farther away points have greater dist which mutes their weight
       dist=abs(i-j)*0.1
       weight=gaussian(dist,sigma=ss)
       sv+=weight*probs[j]
@@ -227,12 +234,14 @@ def probabilitygraph(data,vec1,high,k=5,weightf=gaussian,ss=5.0):
   smoothed=array(smoothed)
     
   plot(t1,smoothed)
-  show()
+  plt.savefig('/home/ubuntu/workspace/collective_intelligence/8ch/prob_density.jpg')
+  plt.close()
   
 
 if __name__ == '__main__':
     # data = wineset1()
-    data = wineset2()
+    # data = wineset2()
+    data = wineset3()
 
     # Original testing
     # print(wineprice(95.0, 3.0))
@@ -286,7 +295,16 @@ if __name__ == '__main__':
     # print(optimization.geneticoptimize(weightdomain, costf, popsize=5, elite=0.2, maxiter=20))
     
     # Uneven Distributions
-    data = wineset3()
-    print(wineprice(99.0, 20.0))
-    print(weightedknn(data, [99.0, 20.0]))
-    print(crossvalidate(weightedknn, data))
+    # print(wineprice(99.0, 20.0))
+    # print(weightedknn(data, [99.0, 20.0]))
+    # print(crossvalidate(weightedknn, data))
+    
+    # Probability Density
+    # print(probguess(data, [99, 20], 40, 80))
+    # print(probguess(data, [99, 20], 80, 120))
+    # print(probguess(data, [99, 20], 120, 1000))
+    # print(probguess(data, [99, 20], 30, 120))
+    
+    # Graphing Density
+    cumulativegraph(data, (1,1), 120)
+    probabilitygraph(data, (99,20), 120)
