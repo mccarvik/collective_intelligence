@@ -1,4 +1,16 @@
+import pdb, sys
+sys.path.append("/home/ubuntu/workspace/collective_intelligence")
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pyplot as plt
 from pylab import *
+
+yahookey="YOUR API KEY"
+from xml.dom.minidom import parseString
+from urllib import urlopen,quote_plus
+
+loc_cache={}
+
 
 class matchrow:
   def __init__(self,row,allnum=False):
@@ -7,6 +19,7 @@ class matchrow:
     else:
       self.data=row[0:len(row)-1]
     self.match=int(row[len(row)-1])
+
 
 def loadmatch(f,allnum=False):
   rows=[]
@@ -23,9 +36,11 @@ def plotagematches(rows):
   
   plot(xdm,ydm,'bo')
   plot(xdn,ydn,'b+')
-  
-  show()
+  plt.savefig('/home/ubuntu/workspace/collective_intelligence/9ch/age_matches.jpg')
+  plt.close()
 
+
+# Calculates the average data point for each possible result
 def lineartrain(rows):
   averages={}
   counts={}
@@ -51,22 +66,29 @@ def lineartrain(rows):
   
   return averages
 
+
 def dotproduct(v1,v2):
   return sum([v1[i]*v2[i] for i in range(len(v1))])
+
 
 def veclength(v):
   return sum([p**2 for p in v])
 
+
 def dpclassify(point,avgs):
-  b=(dotproduct(avgs[1],avgs[1])-dotproduct(avgs[0],avgs[0]))/2
-  y=dotproduct(point,avgs[0])-dotproduct(point,avgs[1])+b
+  # dot product will identify the angle between point to be classified and vector between the 2 averages
+  # angle will dictate what side of the line separating the averages the point falls on
+  b=(dotproduct(avgs[1],avgs[1]) - dotproduct(avgs[0],avgs[0]))/2
+  y=dotproduct(point,avgs[0]) - dotproduct(point,avgs[1]) + b
   if y>0: return 0
   else: return 1
+
 
 def yesno(v):
   if v=='yes': return 1
   elif v=='no': return -1
   else: return 0
+
   
 def matchcount(interest1,interest2):
   l1=interest1.split(':')
@@ -76,28 +98,28 @@ def matchcount(interest1,interest2):
     if v in l2: x+=1
   return x
 
-yahookey="YOUR API KEY"
-from xml.dom.minidom import parseString
-from urllib import urlopen,quote_plus
 
-loc_cache={}
 def getlocation(address):
   if address in loc_cache: return loc_cache[address]
-  data=urlopen('http://api.local.yahoo.com/MapsService/V1/'+\
-               'geocode?appid=%s&location=%s' %
-               (yahookey,quote_plus(address))).read()
+  #   data=urlopen('http://api.local.yahoo.com/MapsService/V1/'+\
+  #               'geocode?appid=%s&location=%s' %
+  #               (yahookey,quote_plus(address))).read()
+  data=urlopen('http://local.yahooapis.com/MapsService/V1/geocode?appid=%s&location=%s' % (yahookey,quote_plus(address))).read()
   doc=parseString(data)
   lat=doc.getElementsByTagName('Latitude')[0].firstChild.nodeValue
   long=doc.getElementsByTagName('Longitude')[0].firstChild.nodeValue  
   loc_cache[address]=(float(lat),float(long))
   return loc_cache[address]
 
+
 def milesdistance(a1,a2):
+  return 0
   lat1,long1=getlocation(a1)
   lat2,long2=getlocation(a2)
   latdif=69.1*(lat2-lat1)
   longdif=53.0*(long2-long1)
   return (latdif**2+longdif**2)**.5
+
 
 def loadnumerical():
   oldrows=loadmatch('matchmaker.csv')
@@ -112,6 +134,7 @@ def loadnumerical():
     newrows.append(matchrow(data))
   return newrows
 
+
 def scaledata(rows):
   low=[999999999.0]*len(rows[0].data)
   high=[-999999999.0]*len(rows[0].data)
@@ -124,12 +147,10 @@ def scaledata(rows):
   
   # Create a function that scales data
   def scaleinput(d):
-     return [(d[i]-low[i])/(high[i]-low[i])
-            for i in range(len(low))]
+     return [(d[i]-low[i])/(high[i]-low[i]) for i in range(len(low)-1)]
   
   # Scale all the data
-  newrows=[matchrow(scaleinput(row.data)+[row.match])
-           for row in rows]
+  newrows=[matchrow(scaleinput(row.data)+[row.match]) for row in rows]
   
   # Return the new data and the function
   return newrows,scaleinput
@@ -139,6 +160,7 @@ def rbf(v1,v2,gamma=10):
   dv=[v1[i]-v2[i] for i in range(len(v1))]
   l=veclength(dv)
   return math.e**(-gamma*l)
+
 
 def nlclassify(point,rows,offset,gamma=10):
   sum0=0.0
@@ -158,6 +180,7 @@ def nlclassify(point,rows,offset,gamma=10):
   if y>0: return 0
   else: return 1
 
+
 def getoffset(rows,gamma=10):
   l0=[]
   l1=[]
@@ -173,5 +196,29 @@ def getoffset(rows,gamma=10):
 if __name__ == "__main__":
     agesonly = loadmatch('agesonly.csv', allnum=True)
     matchmaker = loadmatch('matchmaker.csv')
-    print(agesonly)
-    print(matchmaker)
+    # plotagematches(agesonly)
+    
+    # Linear Classifier
+    # avgs = lineartrain(agesonly)
+    # print(dpclassify([30,30], avgs))
+    # print(dpclassify([30,25], avgs))
+    # print(dpclassify([25,40], avgs))
+    # print(dpclassify([48,20], avgs))
+    
+    # print(getlocation('1 alewife center, cambridge, ma'))
+    # print(milesdistance('cambridge, ma', 'new york, ny'))
+    
+    numericalset = loadnumerical()
+    # print(numericalset[0].data)
+    scaledset, scalef = scaledata(numericalset)
+    avgs = lineartrain(scaledset)
+    print(numericalset[0].data)
+    print(numericalset[0].match)
+    print(dpclassify(scalef(numericalset[0].data), avgs))
+    print(numericalset[11].match)
+    print(dpclassify(scalef(numericalset[11].data), avgs))
+    
+    
+    
+    
+    
