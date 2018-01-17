@@ -156,6 +156,9 @@ def scaledata(rows):
   return newrows,scaleinput
 
 
+# Function used in place of dotproduct to transform data from more complex spaces
+# Function helps to make more complex data sets linearly seperaple, ex: half moons / inner circles
+# TODO: why is the rbf helpful?
 def rbf(v1,v2,gamma=10):
   dv=[v1[i]-v2[i] for i in range(len(v1))]
   l=veclength(dv)
@@ -175,21 +178,25 @@ def nlclassify(point,rows,offset,gamma=10):
     else:
       sum1+=rbf(point,row.data,gamma)
       count1+=1
+  
+  # exact same process as the dotproduct but using different function (rbf)
   y=(1.0/count0)*sum0-(1.0/count1)*sum1+offset
 
   if y>0: return 0
   else: return 1
 
-
+# offset is the same parameter as "b" calculated in dpclassify but using rbf_radial instead of dot product
 def getoffset(rows,gamma=10):
   l0=[]
   l1=[]
   for row in rows:
     if row.match==0: l0.append(row.data)
     else: l1.append(row.data)
+  # takes a while to run as the values arent averaged like for the dotproduct offset calc so have to run thru each row
   sum0=sum(sum([rbf(v1,v2,gamma) for v1 in l0]) for v2 in l0)
   sum1=sum(sum([rbf(v1,v2,gamma) for v1 in l1]) for v2 in l1)
   
+  # pseudo averaging process of the sums
   return (1.0/(len(l1)**2))*sum1-(1.0/(len(l0)**2))*sum0
 
 
@@ -212,13 +219,31 @@ if __name__ == "__main__":
     # print(numericalset[0].data)
     scaledset, scalef = scaledata(numericalset)
     avgs = lineartrain(scaledset)
-    print(numericalset[0].data)
+    # print(numericalset[0].data)
+    # print(numericalset[0].match)
+    # print(dpclassify(scalef(numericalset[0].data), avgs))
+    # print(numericalset[11].match)
+    # print(dpclassify(scalef(numericalset[11].data), avgs))
+
+    # Kernel Stuff - nonlinear data
+    # Just ages
+    offset = getoffset(agesonly)
+    print(nlclassify([30,30], agesonly, offset))
+    print(nlclassify([30,25], agesonly, offset))
+    print(nlclassify([25,40], agesonly, offset))
+    print(nlclassify([48,20], agesonly, offset))
+    
+    # Using all the data
+    pdb.set_trace()
+    ssoffset = getoffset(scaledset)
     print(numericalset[0].match)
-    print(dpclassify(scalef(numericalset[0].data), avgs))
-    print(numericalset[11].match)
-    print(dpclassify(scalef(numericalset[11].data), avgs))
-    
-    
-    
-    
+    print(nlclassify(scalef(numericalset[0].data), scaledset, ssoffset))
+    print(numericalset[1].match)
+    print(nlclassify(scalef(numericalset[1].data), scaledset, ssoffset))
+    print(numericalset[2].match)
+    print(nlclassify(scalef(numericalset[2].data), scaledset, ssoffset))
+    newrow = [28.0, -1, -1, 26.0, -1, 1, 2, 0.8]  # Man doesn't want children, woman does
+    print(nlclassify(scalef(newrow), scaledset, ssoffset))
+    newrow = [28.0, -1, 1, 26.0, -1, 1, 2, 0.8]  # Both want children
+    print(nlclassify(scalef(newrow), scaledset, ssoffset))
     
