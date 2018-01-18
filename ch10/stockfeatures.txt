@@ -1,0 +1,3 @@
+> /home/ubuntu/workspace/collective_intelligence/ch10/stockvolume.py(21)<module>()
+-> rows=urllib2.urlopen('http://ichart.finance.yahoo.com/table.csv?'+\
+(Pdb) 

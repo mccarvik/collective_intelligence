@@ -1,0 +1,965 @@
+Asia and Australia Edition: North Korea, Amazon, Republicans: Your Friday Briefing
+3.17642172075 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+1.11610133164 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.982447941749 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Trump Upsets Republican Strategy to Avoid Shutdown
+11.4322801555 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+2.91769225899 ['that', 'with', 'have', 'from', 'more', 'women']
+2.61391617216 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Trump Denies Changing His Position on Border Wall
+11.5031790534 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+2.35109180927 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+1.91748450513 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+Senate Democrats Make Hard Turn Left in Warming Up for 2020 Race
+12.1716945776 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+3.68993947033 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.90248433769 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Health Workers Who Oppose Abortion Get New Protections
+6.2046564345 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+1.58295692788 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.932058022866 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Warming, Water Crisis, Then Unrest: How Iran Fits an Alarming Pattern
+1.34467962887 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.668874549915 ['that', 'with', 'have', 'from', 'more', 'women']
+0.0235968045717 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+
+A Mother’s Promise: You Can Be Yourself
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+After the Apologies, Restaurants Struggle to Change
+8.79083584431 ['that', 'with', 'have', 'from', 'more', 'women']
+7.84904303426 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+1.68423977974 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Aziz Ansari and the #MeToo Debate
+1.81715308153 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+0.241063605683 ['that', 'with', 'have', 'from', 'more', 'women']
+0.16650128315 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Amazon Chooses 20 Finalists for Second Headquarters
+16.0450577238 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.319345862592 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.106488644946 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Where Amazon May Build Its New Headquarters
+6.60598960511 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+2.04147131581 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.995951701803 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+Contributing Op-Ed Writer: The El Salvador Tragedy
+12.3296129222 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+10.2365339152 ['that', 'with', 'have', 'from', 'more', 'women']
+0.0132984186648 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Op-Ed Contributor: Trump’s Chance to Save American Steel
+5.8246912697 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.18683971439 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+1.04069135271 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+
+Letters: ‘Vision, Chutzpah and Some Testosterone’
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Op-Ed Columnist: A Modest Immigration Proposal: Ban Jews
+0.295868716342 ['that', 'with', 'have', 'from', 'more', 'women']
+0.0802541612796 ['this', 'being', 'more', 'about', 'than', 'month']
+0.00164100172658 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+Op-Ed Columnist: What We Can Learn From ‘S-Hole Countries’
+1.66850332136 ['this', 'being', 'more', 'about', 'than', 'month']
+1.20795865911 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.854213330944 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Contributing Op-Ed Writer: Will Women Lead the Democrats to Victory?
+17.1675871431 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+5.89231616674 ['this', 'being', 'more', 'about', 'than', 'month']
+1.19254280313 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Op-Ed Contributor: The Wrong Way to Treat Opioid Addiction
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Contributing Op-Ed Writer: Why I’m Ambivalent About Chelsea Manning
+13.9639425793 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+1.97476846052 ['this', 'being', 'more', 'about', 'than', 'month']
+1.21899722915 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Contributing Op-Ed Writer: Aziz, We Tried to Warn You
+14.2689326828 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+1.73897590273 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.00012999582 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+California Parents of 13 Charged With Torture and Abuse
+4.51016153794 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+2.38926008084 ['that', 'with', 'have', 'from', 'more', 'women']
+1.16016532403 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+HuffPost, Breaking From Its Roots, Ends Unpaid Contributions
+1.40416850791 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+1.22492120427 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+1.0928671158 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+
+Dylan Farrow Accuses Woody Allen of Abuse in TV Interview
+24.2402411833 ['this', 'being', 'more', 'about', 'than', 'month']
+1.0291162476 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.455237800021 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+
+Souring World Views of Trump Open Doors for China and Russia
+26.369936019 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.739991213358 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.649583134224 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+India Tests Ballistic Missile, Posing New Threat to China
+4.11929343483 ['this', 'being', 'more', 'about', 'than', 'month']
+0.645173621333 ['that', 'with', 'have', 'from', 'more', 'women']
+0.411051279738 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+The U.S. Fertility Rate Is Down, Yet More Women Are Mothers
+9.60940577571 ['that', 'with', 'have', 'from', 'more', 'women']
+1.81065290181 ['this', 'being', 'more', 'about', 'than', 'month']
+1.00131577057 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Feature: Fear of the Federal Government in the Ranchlands of Oregon
+1.82459696965 ['that', 'with', 'have', 'from', 'more', 'women']
+0.86267375748 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.281257957879 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+On Stage Was Springsteen, in the Audience, Chris Christie
+4.49800139326 ['that', 'with', 'have', 'from', 'more', 'women']
+1.47620814458 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.0692340801014 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+U.K. Appoints a Minister for Loneliness
+1.27097205264 ['this', 'being', 'more', 'about', 'than', 'month']
+0.984737218619 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.76708960679 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Prague Journal: One of the World’s Oldest Clocks Stops Ticking, Briefly
+7.24787253598 ['this', 'being', 'more', 'about', 'than', 'month']
+1.0725206971 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.39689456702e-07 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+They Have Seen the Future, and It’s Wasting Zombies at the Arcade
+2.30665011577 ['that', 'with', 'have', 'from', 'more', 'women']
+0.940976172521 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.788255735033 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+Why Are We Ashamed to Call ‘Get Out’ and ‘The Shape of Water’ Horror Films?
+4.5240320486 ['that', 'with', 'have', 'from', 'more', 'women']
+3.01616549573 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+0.365738099039 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+How to Maintain Friendships
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+How to Plan a Last-Minute Trip to the 2018 Winter Olympics in Pyeongchang
+2.64710026647 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+1.79580186822 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+1.27161606086 ['that', 'with', 'have', 'from', 'more', 'women']
+
+The New Health Care: A Memory Shortcut, With a Little Help From Friends
+5.6710318374 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+2.9665106651 ['that', 'with', 'have', 'from', 'more', 'women']
+0.915331265599 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+Disruptions: Is the Answer to Phone Addiction a Worse Phone?
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Six New Cocktails, Alcohol Not Included
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Eric Wynalda Discusses His Financial Problems — and Everything Else
+10.1421393809 ['this', 'being', 'more', 'about', 'than', 'month']
+3.00815250322 ['that', 'with', 'have', 'from', 'more', 'women']
+0.236565492393 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+
+Are You Ready to (Dress Like You) Rock?
+2.39540611301 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+3.04682480873e-13 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+3.73258865114e-71 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+Fiction: Knausgaard’s Seasonal Book Series Continues With a Wintry Mix
+2.72130401398 ['that', 'with', 'have', 'from', 'more', 'women']
+1.17739809676 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.167960949805 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+After 950 Years, the Bayeux Tapestry Is Set to Be Displayed in Britain
+7.85197019056 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+6.75955985163 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.777581274833 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Review: A Donizetti Revival at the Met Hints at More to Come
+3.03044072286 ['this', 'being', 'more', 'about', 'than', 'month']
+0.837930210145 ['that', 'with', 'have', 'from', 'more', 'women']
+1.16370306197e-21 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Questions and Answers About This Year’s Flu Season
+12.9141188909 ['this', 'being', 'more', 'about', 'than', 'month']
+1.56909432335 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+1.23760357991 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Trilobites: Being Antisocial Leads to a Longer Life. For Marmots.
+5.29546999111 ['that', 'with', 'have', 'from', 'more', 'women']
+3.87836152191 ['this', 'being', 'more', 'about', 'than', 'month']
+1.00704356068 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Phys Ed: How Our Bones Might Help Keep Our Weight in Check
+0.864605723592 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.159233457009 ['that', 'with', 'have', 'from', 'more', 'women']
+6.95405856422e-10 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Trilobites: Where Did Animals With Tail Weapons Go? Here’s a Back Story
+9.63413968716 ['that', 'with', 'have', 'from', 'more', 'women']
+2.61539028519 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+1.44262848236 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+Opinion: The Secret to a Happy Marriage Is Knowing How to Fight
+0.486248965581 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.231584665634 ['this', 'being', 'more', 'about', 'than', 'month']
+1.18207174325e-20 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Everyone Is Getting Hilariously Rich and You’re Not
+3.1541437618 ['that', 'with', 'have', 'from', 'more', 'women']
+1.10323612533 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.150122296728 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+A Girl’s Killing Puts Germany’s Migration Policy on Trial
+4.63213870986 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.986169655508 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.470291423868 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Olympic Détente Upends U.S. Strategy on North Korea
+6.07803453281 ['that', 'with', 'have', 'from', 'more', 'women']
+1.15373841618 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.716079855642 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+U.S. Funding Cut Reignites Debate on Palestinian Refugee Agency
+1.6844503737 ['that', 'with', 'have', 'from', 'more', 'women']
+1.36132172637 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.28618445547 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+China’s Economic Growth Looks Strong. Maybe Too Strong.
+7.05084849104 ['that', 'with', 'have', 'from', 'more', 'women']
+1.46036217314 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+1.41898372675 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+U.K. Asks, Who Pays to Prevent Another Grenfell Tragedy?
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Sex Abuse Case Shadows Pope Francis’ Visit to Peru
+22.6598862729 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.681422522249 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+0.0296009979049 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Bus Fire Kills 52 Uzbeks Traveling in Kazakhstan: Kazakh Government
+0.898215203 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+0.333146576034 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.181772258075 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+Can Philippe Jaroussky Help Fix Classical Music’s Diversity Problem?
+4.8721340755 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+4.4673807432 ['that', 'with', 'have', 'from', 'more', 'women']
+2.78147810062 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Britain and France Discuss Deals to Limit Brexit Fallout
+10.5388323081 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.364063295054 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.337043826664 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+Emirates Offers A380 a Lifeline, Signing $16 Billion Deal With Airbus
+5.27513671228 ['that', 'with', 'have', 'from', 'more', 'women']
+1.64872292881 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.257021745213 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Letter 41: Australia vs. Canada. The Results Are In.
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Matter: In the Arctic, More Rain May Mean Fewer Musk Oxen
+5.19636270408 ['that', 'with', 'have', 'from', 'more', 'women']
+1.47177817096 ['this', 'being', 'more', 'about', 'than', 'month']
+0.877478723052 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+
+Hunting a C.I.A. Mole, Agents Gambled and Let a Suspect Return to China
+3.95212089749 ['that', 'with', 'have', 'from', 'more', 'women']
+2.68912063782 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+2.36532666158 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+ISIS Claims Responsibility for Baghdad Bombings
+4.43031065002 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+3.88060795728 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.03346907255 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+North Korea, Bannon, Apple: Your Wednesday Evening Briefing
+2.87001761161 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.45818494358 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+1.08579539491 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Suicide Bombers Attack Market in Nigeria, Killing at Least 12
+6.88569038314 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+1.94886504812 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.19288160398 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Gunmen Kidnap 2 Americans and 2 Canadians in Nigeria
+8.27726033727 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+3.25128445097 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+1.38079341274 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Tillerson Says U.S. Troops to Stay in Syria Beyond Battle With ISIS
+8.0388457 ['this', 'being', 'more', 'about', 'than', 'month']
+4.8502310284 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+2.17791949193 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Facebook to Take Broader Look at Possible Russian Role in Brexit Vote
+7.50443479894 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+4.99436005888 ['that', 'with', 'have', 'from', 'more', 'women']
+0.30392915629 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Myanmar Police Gun Down Marchers in Rakhine Ethnic Rally
+37.2522276895 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.0127448893847 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.0016361039033 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Moscow Got 6 Minutes of Sunlight in December
+1.61007927849 ['that', 'with', 'have', 'from', 'more', 'women']
+1.1379116948 ['this', 'being', 'more', 'about', 'than', 'month']
+0.981633311024 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Rome Journal: For Rome’s Taxi Drivers, Lessons in Courtesy and Cultural Savvy
+3.0852915785 ['that', 'with', 'have', 'from', 'more', 'women']
+1.11963915715 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.152652116791 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+North and South Korean Teams to March as One at Olympics
+2.67880716889 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+1.09839242493 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.934226466116 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Carillion Collapse Could Lead to Thousands of Job Losses in U.K.
+7.06408803727 ['this', 'being', 'more', 'about', 'than', 'month']
+0.0299969562144 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+1.40955557969e-07 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Marta Kostyuk, 15, Reaches 3rd Round of Australian Open
+3.16609627868 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.38461912288 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.590309043847 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+
+Joshua Wong Sentenced in Hong Kong for Role in Umbrella Movement
+2.42477058978 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.53171285149 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+1.00428218296 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+U.S. Withholds $65 Million From U.N. Relief Agency for Palestinians
+7.49608018468 ['this', 'being', 'more', 'about', 'than', 'month']
+1.12121001345 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.841837530903 ['that', 'with', 'have', 'from', 'more', 'women']
+
+U.S.-Backed Force Could Cement a Kurdish Enclave in Syria
+2.36052183771 ['this', 'being', 'more', 'about', 'than', 'month']
+1.76819426456 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.418446573609 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Stephen Bannon, California, Bitcoin: Your Tuesday Evening Briefing
+4.34015405708 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.0403807279 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.26868674403 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Venezuelan Rebel Leader Films His Last Stand
+9.28747119815 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+5.15059468136 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+3.55124401403 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Russian Theater Director’s House Arrest Is Extended
+2.02711111195 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+1.111490132 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+0.597374572493 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+In Chile, Pope Francis Apologizes for ‘Irreparable Damage’ Caused by Sexual Abuse
+20.258847114 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+2.761089824 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.00260760365688 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Macron Defends Migration Policy in France, Walking a Fine Line
+23.6831741611 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.40913081906 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.561699793778 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Fugitive Venezuelan Police Officer Is Killed in Shootout
+9.43618041865 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+3.44532209698 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+2.58367338708 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+
+Toronto Journal: Shivering? That’s for City Folk. For Islanders, Ice Time Is Play Time.
+5.59147116045 ['that', 'with', 'have', 'from', 'more', 'women']
+1.53275906112 ['this', 'being', 'more', 'about', 'than', 'month']
+0.280085392769 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Czech Republic Faces Political Turmoil After No-Confidence Vote
+6.59042704191 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+5.11631347072 ['that', 'with', 'have', 'from', 'more', 'women']
+2.71682212869 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Submarine Builder Charged With Murder in Death of Kim Wall
+7.34775778548 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+6.05798067603 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+2.98538970671 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Days After Hawaii’s False Missile Alarm, a New One in Japan
+7.54196520476 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+4.34649385005 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.05993930179 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Taliban Fighters Using High-Tech Gear Kill Afghan Forces
+2.50651024767 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+2.38355449819 ['that', 'with', 'have', 'from', 'more', 'women']
+1.18104448785 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+
+Colombia Bridge Collapse Throws Workers to Their Deaths
+2.44608649585 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.841853860234 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.00436221430622 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+Oliver Ivanovic, Moderate Kosovo Serb Leader, Is Killed
+15.6182453766 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.429512521395 ['that', 'with', 'have', 'from', 'more', 'women']
+2.34501708247e-05 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+In Spain, Searching for Ancestors, Dry Wine and Calm Seas
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Oil Price Briefly Reaches $70 as Buoyant Global Economy Bolsters Demand
+6.52136110899 ['this', 'being', 'more', 'about', 'than', 'month']
+0.0609051779547 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+3.37001510261e-06 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+This RSS feed URL is deprecated
+11.67664659 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+5.15048246171 ['this', 'being', 'more', 'about', 'than', 'month']
+0.261287664497 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+'This is depraved conduct,' DA says of California couple accused of torturing kids - CNN
+57.4973226775 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+16.072265707 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+2.74755846774 ['this', 'being', 'more', 'about', 'than', 'month']
+
+GOP Senators Weigh Short-Term Bill to Get Votes - Bloomberg
+51.8031729472 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+5.49190557711 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+0.895951549808 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Amazon's second headquarters: The pros and cons of the finalists - USA TODAY
+49.9496939721 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+29.4352067081 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.793531226739 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+
+Arizona serial killer suspect murdered nine people in three-week span, police say - Fox News
+56.6667306337 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+21.3027540269 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+0.538147890365 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+New HHS civil rights division charged with protecting health-care workers with moral objections - Washington Post
+72.1191751487 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+2.18182605245 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+1.70384346807 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Gunman kills US Marshal, shoots two other police officers at Pennsylvania home as they tried to arrest fugitive - New York Daily News
+60.202107616 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+12.3604322768 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+2.90875368565 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+At Larry Nassar sentencing hearing, a parade of horror and catharsis - Washington Post
+61.8267517044 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+10.3577210095 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+3.99581473499 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+
+Pope Francis defends bishop accused of sexual abuse cover up: 'Bring me proof' - Fox News
+57.2364928763 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+17.0310994468 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+11.2778284436 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+
+Trump Upsets Republican Strategy to Avoid Shutdown - New York Times
+65.9710652899 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+1.37854687353 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.16082333847 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+University of Alabama expels student over racist social media videos (WARNING: GRAPHIC LANGUAGE) - New York Daily News
+59.4214046073 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+0.56730654167 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+0.367720370748 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+
+North Korea warns of 'abyss of doom' if 'old lunatic' Trump remains president
+7.84346266571 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.914007713774 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.866800189287 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Brazile says CNN€&trade;s Tapper betrayed her after debate flap
+6.67014183115 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.843783945041 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.30952708775 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Nasty notes that spurred Air Force general€&trade;s lecture written by &acirc;€&tilde;victim&acirc;€&trade;
+4.43789381026 ['that', 'with', 'have', 'from', 'more', 'women']
+0.436725582736 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.149437905827 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Woman killed €&tilde;sugar daddy&acirc;€&trade; when relationship soured: prosecutors
+3.88972522361 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.18428473988 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.539750608114 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Exclusive: Undercover teams record grisly remote Faroe Islands whale slaughter
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Wrestler had 15 drinks a day, slept with 10,000 women, documentary reveals
+3.59595402708 ['that', 'with', 'have', 'from', 'more', 'women']
+1.03348839736 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.134659933973 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+What critter has been found hidden in Van Gogh painting?
+1.5245546654 ['this', 'being', 'more', 'about', 'than', 'month']
+0.557595812837 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.516079850338 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Germany must legally recognize 'third gender' from birth, top court rules
+1.3544171149 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+1.03854184146 ['that', 'with', 'have', 'from', 'more', 'women']
+0.852211757242 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Lightning strike instantly kills two surfers
+0.658200069067 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+2.15967037802e-13 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+1.86826292051e-38 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+'Super mom' Sherri Papini filmed running to safety the morning she was found
+0.728152895569 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.287758110616 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+0.270855071603 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Ex-news anchor whose reporter girlfriend was killed on live TV wins election
+5.88467842192 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+2.87203734927 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.03765150556 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Tom Fitton: Mueller probe is 'fruit of the poison tree,' should be shut down
+1.43946800218 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+0.965920943081 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.329994121882 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+
+Pence responds to attacks on prayer after Texas shooting
+6.37508669986 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.563086753834 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+1.14680449464e-07 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+LiAngelo Ball, two UCLA players arrested in China for alleged shoplifting
+0.734677262987 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.334495283845 ['that', 'with', 'have', 'from', 'more', 'women']
+3.40360740285e-113 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+Twitter apologizes for 'bisexual' technical glitch
+3.46468423886 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+2.66492636118e-84 ['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+7.7288382147e-128 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Author Gay Talese blasts Kevin Spacey accuser who 'ruined' actor's career
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+WATCH: Tucker rips calls for gun control after Texas shooting
+6.37508669975 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.563086753543 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+1.1439396105e-07 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Teacher, 40, allegedly sent nude pics, lewd love letters to teen student
+0.94374976707 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+2.89045099169e-128 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+2.07369911072e-155 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Bill de Blasio re-elected to second term as NYC mayor
+3.27468483848 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+3.25453462141 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.983661279428 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Justice Department drops case against Code Pink protester who laughed at Jeff Sessions
+0.617640875084 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.596073941848 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+0.220316994795 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Abby Patterson disappearance: $10K reward offered in missing woman case
+1.04994466891 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.25511390665 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.202072082305 ['this', 'being', 'more', 'about', 'than', 'month']
+
+REALITY CHECK: Patriot's Rob Gronkowski offers advice to younger NFL players
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+US-bound flights get tougher screening procedures for passengers
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Husband of Michigan teacher missing for months is found dead in possible suicide
+1.38921940114 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+0.646058513147 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.522053562048 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Arizona woman arrested in deadly wreck had 3-year-old daughter in car during crash
+1.77019888908 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+1.60369005491 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+1.35102807754 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+'It' factor: California cops pose for viral photo inspired by horror film
+1.92922659818 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+1.05133142543 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+4.39003966842e-51 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+
+Tom Brady: I hope Kaepernick gets another chance in NFL
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Oklahoma police officers shot while serving a search warrant
+4.72521726483 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.02068502106 ['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+0.891621729569 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+'Hell on wheels': Five disabled New Yorkers file hundreds of lawsuits
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+University of Virginia to remove Confederate plaques, ban open flames - Which Confederate statues were removed? A running list
+3.38814409586 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+2.72677936192 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+1.4134558424 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Chevy brings back diesel
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Reinventing football helmets
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+'Cheers' fact shocks
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+JLaw's film anti-Christian?
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+From fat-shamed to billionaire
+1.21253122349 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.907672241924 ['that', 'with', 'have', 'from', 'more', 'women']
+0.865924058585 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Breastfeeding mom called out
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Where militaries window shop
+1.57077219403 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.405734838384 ['that', 'with', 'have', 'from', 'more', 'women']
+0.0349571127301 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+Star Wars: Should we care?
+2.03560788203 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.209493147665 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+0.023825133164 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Bette Davis' shocking betrayal
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+'View' hosts cause a stir
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+'Bounty' star vow to fight
+0.486248965581 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+0.231584665634 ['this', 'being', 'more', 'about', 'than', 'month']
+1.00455358675e-21 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+3 arrested for 'rape table'
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Gross &lsquo;fatberg&rsquo; clogs sewer
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+&lsquo;Sexualized&rsquo; for her wardrobe
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Sea ice melted. Temperatures soared. And the trend towards a warmer planet has never been clearer.
+3.6978298495 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+3.19471304094 ['that', 'with', 'have', 'from', 'more', 'women']
+1.01226000075 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+It snowed in one of the world's hottest places
+1.44878237262 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+1.09874201324 ['that', 'with', 'have', 'from', 'more', 'women']
+0.542113319962 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Opinion: Americans pay a fearsome price for global warming
+13.6820568083 ['that', 'with', 'have', 'from', 'more', 'women']
+4.33861138745 ['this', 'being', 'more', 'about', 'than', 'month']
+2.81446337995 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Report: Trump admin scrubbed 'climate change' from websites
+13.6841784191 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+2.49812446309 ['that', 'with', 'have', 'from', 'more', 'women']
+1.75264441147 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Thought 2017 was bad? 2018 could be worse
+0.70792337628 ['that', 'with', 'have', 'from', 'more', 'women']
+0.43611798881 ['this', 'being', 'more', 'about', 'than', 'month']
+4.01342427475e-21 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+You can't get $1 out of a Venezuelan bank
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+From $7,500 loan to $375 million business
+1.21253122347 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.907672241353 ['that', 'with', 'have', 'from', 'more', 'women']
+0.865924058393 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Facebook looks into Russian meddling in Brexit
+0.479382374021 ['that', 'with', 'have', 'from', 'more', 'women']
+0.057286185128 ['this', 'being', 'more', 'about', 'than', 'month']
+0.055642444615 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+5 ways the world is pulling apart
+1.5176435292 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.156680576822 ['this', 'being', 'more', 'about', 'than', 'month']
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+How a 3-year-old's passion became a business
+3.54845906855 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.05469089014 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.828070890625 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+See highlights from CNN Heroes tribute
+1.21253122347 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.907672241392 ['that', 'with', 'have', 'from', 'more', 'women']
+0.865924058406 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+2016 Hero of the Year: Dreaming is worth it
+1.6496592409 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+1.25634038529 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+1.05778566646 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+Goodbye, old iPhone: This could be 40X better
+5.67084836609 ['this', 'being', 'more', 'about', 'than', 'month']
+0.100495145769 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+8.37883912232e-05 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Bill Gates' prediction will give you goosebumps
+1.69759686146 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+0.543284177581 ['this', 'being', 'more', 'about', 'than', 'month']
+0.487344989884 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Leaked: Secret Apple recordings stun investors
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+
+12.3265010918 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.000125936838777 ['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+2.0185693361e-06 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Woman confesses after cops spot murder weapon in her Facebook photo
+5.9931642774 ['this', 'being', 'more', 'about', 'than', 'month']
+5.97331553903 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+1.41921225213 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Pope Francis marries couple aboard papal plane
+14.9773726135 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+1.26515450809 ['this', 'being', 'more', 'about', 'than', 'month']
+0.450600350352 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+YouTube is pulling dangerous 'Tide Pod challenge' videos
+1.27621235763 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+2.33911997656e-55 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+2.70144765672e-97 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+
+Tide responds to the Pod Challenge
+9.03956351547 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+2.18472660232 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.299365527567 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+
+Poison control calls 'spike' due to online challenge
+13.1654271936 ['that', 'with', 'have', 'from', 'more', 'women']
+1.00561008017 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+0.749972774023 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Toddlers suffer eye burns from laundry packets
+8.50544816181 ['this', 'being', 'more', 'about', 'than', 'month']
+6.40731944456 ['that', 'with', 'have', 'from', 'more', 'women']
+5.35969358755 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+Government to shut down in 48 hours: What to watch
+6.68483774679 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+3.28627436598 ['that', 'with', 'have', 'from', 'more', 'women']
+2.64649271836 ['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+
+Bob Dole gets assistance to stand for the flag
+3.72718708304 ['that', 'with', 'have', 'from', 'more', 'women']
+1.26453108918 ['this', 'being', 'more', 'about', 'than', 'month']
+0.913476032014 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+State Dept. staff prints out Trump's tweets for Tillerson to read
+37.0087271995 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+0.691045275765 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+0.540768087656 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+VA apologizes after surgery that allegedly left scalpel inside veteran for years
+5.70593760223 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+4.76479073567 ['that', 'with', 'have', 'from', 'more', 'women']
+2.32207785355 ['this', 'being', 'more', 'about', 'than', 'month']
+
+They are shaking up footwear with wool shoes
+2.83037834235 ['that', 'with', 'have', 'from', 'more', 'women']
+1.02874560969 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.722305887357 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+
+Multiple adoption applications for abandoned dog tied to tree, left in Md.
+1.3442335696 ['this', 'being', 'more', 'about', 'than', 'month']
+0.0671919032907 ['that', 'with', 'have', 'from', 'more', 'women']
+0.000414413856593 ['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+
+Plow driver 'escapes injury' after malfunction
+5.71711514262 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.00160773393361 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+3.95408198305e-05 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Pregnant woman walking dog punched by jogger
+0.343476801674 ['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+0.243316623664 ['this', 'being', 'more', 'about', 'than', 'month']
+0.0858316895278 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+
+Hockey player's death was flu-related
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Winter chill impacts sea turtles, iguanas
+0.488402690875 ['this', 'being', 'more', 'about', 'than', 'month']
+0.171275589104 ['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+5.62954355109e-05 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Football team helps senior citizens shovel snow
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Dad overdoses, crashes with daughter in car
+2.72128853317 ['that', 'with', 'have', 'from', 'more', 'women']
+1.17738348876 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.167822544097 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+
+Dozens more NY residents forced to evacuate
+1.68696663038 ['this', 'being', 'more', 'about', 'than', 'month']
+0.769278229639 ['that', 'with', 'have', 'from', 'more', 'women']
+1.77302835416e-48 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+
+Artist re-imagines controversial H&M ad
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Nephew admits to kill aunt, step-uncle
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Retired Marine talks man off the ledge of St. Louis bridge
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Church's 'Minneapolis Miracle' post goes viral
+1.58974514695 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+1.58592333683 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+0.126343486833 ['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+
+Meteor debris may have landed in Michigan
+2.19091630213 ['that', 'with', 'have', 'from', 'more', 'women']
+1.45627453035 ['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+0.645498989313 ['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+
+Flu outbreak forces district to close all schools
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Icy conditions create gridlock on Texas freeway
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Fire log goes through couple's windshield
+1.33447438887 ['nbsp', 'news', 'california', 'accused', 'year', 'says']
+0.409078403015 ['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+0.14237922961 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+
+14 students hospitalized, possibly ate laced candy
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+
+Former gym is newest fun place for dogs
+0.281820352288 ['that', 'with', 'have', 'from', 'more', 'women']
+2.83547925249e-15 ['finalists', 'second', 'list', 'amazon', 'from', 'today']
+3.14275603867e-32 ['this', 'being', 'more', 'about', 'than', 'month']
+
+Teen 'ashamed' after video goes viral
+6.01683401091 ['after', 'their', 'missile', 'says', 'shooting', 'with']
+0.125469810864 ['workers', 'health', 'care', 'with', 'post', 'nbsp']
+0.000320712990399 ['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+
+Food Network invents a Cheesehead drink
+0.0 ['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+0.0 ['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+0.0 ['that', 'with', 'have', 'from', 'more', 'women']
+

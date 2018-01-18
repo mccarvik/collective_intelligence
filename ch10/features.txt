@@ -1,0 +1,100 @@
+['bishop', 'pope', 'accused', 'defends', 'news', 'sexual']
+(57.236492876315147, u"Pope Francis defends bishop accused of sexual abuse cover up: 'Bring me proof' - Fox News")
+(1.8171530815314521, u'Aziz Ansari and the #MeToo Debate')
+(1.6842397797387394, u'After the Apologies, Restaurants Struggle to Change')
+
+['news', 'nbsp', 'raquo', 'found', 'articles', 'killed']
+(21.30275402686118, u'Arizona serial killer suspect murdered nine people in three-week span, police say - Fox News')
+(16.072265706987253, u"'This is depraved conduct,' DA says of California couple accused of torturing kids - CNN")
+(12.360432276765298, u'Gunman kills US Marshal, shoots two other police officers at Pennsylvania home as they tried to arrest fugitive - New York Daily News')
+
+['workers', 'health', 'care', 'with', 'post', 'nbsp']
+(72.119175148672269, u'New HHS civil rights division charged with protecting health-care workers with moral objections - Washington Post')
+(6.2046564344985944, u'Health Workers Who Oppose Abortion Get New Protections')
+(5.6710318373994433, u'The New Health Care: A Memory Shortcut, With a Little Help From Friends')
+
+['rakhine', 'were', 'during', 'wednesday', 'killed', 'down']
+(37.252227689492031, u'Myanmar Police Gun Down Marchers in Rakhine Ethnic Rally')
+(3.445322096980787, u'Fugitive Venezuelan Police Officer Is Killed in Shootout')
+(3.3881440958628142, u'University of Virginia to remove Confederate plaques, ban open flames - Which Confederate statues were removed? A running list')
+
+['trump', 'tillerson', 'president', 'wednesday', 'state', 'tweets']
+(37.008727199521559, u"State Dept. staff prints out Trump's tweets for Tillerson to read")
+(26.369936019044626, u'Souring World Views of Trump Open Doors for China and Russia')
+(13.684178419053357, u"Report: Trump admin scrubbed 'climate change' from websites")
+
+['marshal', 'officers', 'pennsylvania', 'police', 'news', 'nbsp']
+(60.202107616041523, u'Gunman kills US Marshal, shoots two other police officers at Pennsylvania home as they tried to arrest fugitive - New York Daily News')
+(3.2512844509721579, u'Gunmen Kidnap 2 Americans and 2 Canadians in Nigeria')
+(2.0206850210589975, u'Oklahoma police officers shot while serving a search warrant')
+
+['arizona', 'suspect', 'nine', 'police', 'three', 'people']
+(56.666730633713172, u'Arizona serial killer suspect murdered nine people in three-week span, police say - Fox News')
+(2.8144633799485481, u'Opinion: Americans pay a fearsome price for global warming')
+(2.6891206378165102, u'Hunting a C.I.A. Mole, Agents Gambled and Let a Suspect Return to China')
+
+['twitter', 'bloomberg', 'bill', 'term', 'democrats', 'short']
+(51.803172947168584, u'GOP Senators Weigh Short-Term Bill to Get Votes - Bloomberg')
+(6.6848377467949947, u'Government to shut down in 48 hours: What to watch')
+(3.4646842388619108, u"Twitter apologizes for 'bisexual' technical glitch")
+
+['trump', 'nbsp', 'republican', 'insurance', 'health', 'times']
+(65.97106528986339, u'Trump Upsets Republican Strategy to Avoid Shutdown - New York Times')
+(11.432280155497626, u'Trump Upsets Republican Strategy to Avoid Shutdown')
+(2.6464927183646014, u'Government to shut down in 48 hours: What to watch')
+
+['finalists', 'second', 'list', 'amazon', 'from', 'today']
+(29.435206708054018, u"Amazon's second headquarters: The pros and cons of the finalists - USA TODAY")
+(16.045057723768437, u'Amazon Chooses 20 Finalists for Second Headquarters')
+(3.697829849500804, u'Sea ice melted. Temperatures soared. And the trend towards a warmer planet has never been clearer.')
+
+['university', 'alabama', 'videos', 'racist', 'sorority', 'daily']
+(59.421404607308446, u'University of Alabama expels student over racist social media videos (WARNING: GRAPHIC LANGUAGE) - New York Daily News')
+(3.5512440140281609, u'Venezuelan Rebel Leader Films His Last Stand')
+(1.4134558423960062, u'University of Virginia to remove Confederate plaques, ban open flames - Which Confederate statues were removed? A running list')
+
+['francis', 'pope', 'chile', 'case', 'abuse', 'last']
+(22.659886272948444, u'Sex Abuse Case Shadows Pope Francis\u2019 Visit to Peru')
+(20.258847113956119, u'In Chile, Pope Francis Apologizes for \u2018Irreparable Damage\u2019 Caused by Sexual Abuse')
+(17.031099446783422, u"Pope Francis defends bishop accused of sexual abuse cover up: 'Bring me proof' - Fox News")
+
+['france', 'tuesday', 'killed', 'officers', 'police', 'outside']
+(23.683174161081762, u'Macron Defends Migration Policy in France, Walking a Fine Line')
+(15.618245376589254, u'Oliver Ivanovic, Moderate Kosovo Serb Leader, Is Killed')
+(10.538832308148033, u'Britain and France Discuss Deals to Limit Brexit Fallout')
+
+['nassar', 'larry', 'nbsp', 'post', 'washington', 'news']
+(61.82675170439623, u'At Larry Nassar sentencing hearing, a parade of horror and catharsis - Washington Post')
+(3.0161654957262183, u'Why Are We Ashamed to Call \u2018Get Out\u2019 and \u2018The Shape of Water\u2019 Horror Films?')
+(1.5859233368294814, u"Church's 'Minneapolis Miracle' post goes viral")
+
+['nbsp', 'news', 'california', 'accused', 'year', 'says']
+(57.497322677492562, u"'This is depraved conduct,' DA says of California couple accused of torturing kids - CNN")
+(5.3596935875546459, u'Toddlers suffer eye burns from laundry packets')
+(4.5101615379413902, u'California Parents of 13 Charged With Torture and Abuse')
+
+['after', 'their', 'missile', 'says', 'shooting', 'with']
+(9.0395635154662841, u'Tide responds to the Pod Challenge')
+(7.8490430342581474, u'After the Apologies, Restaurants Struggle to Change')
+(7.5419652047566847, u'Days After Hawaii\u2019s False Missile Alarm, a New One in Japan')
+
+['this', 'being', 'more', 'about', 'than', 'month']
+(24.240241183321444, u'Dylan Farrow Accuses Woody Allen of Abuse in TV Interview')
+(12.914118890898344, u'Questions and Answers About This Year\u2019s Flu Season')
+(10.14213938094572, u'Eric Wynalda Discusses His Financial Problems \u2014 and Everything Else')
+
+['that', 'with', 'have', 'from', 'more', 'women']
+(13.682056808290678, u'Opinion: Americans pay a fearsome price for global warming')
+(13.165427193627556, u"Poison control calls 'spike' due to online challenge")
+(10.236533915179228, u'Contributing Op-Ed Writer: The El Salvador Tragedy')
+
+['contributing', 'writer', 'senate', 'democrats', 'year', 'last']
+(17.167587143116805, u'Contributing Op-Ed Writer: Will Women Lead the Democrats to Victory?')
+(14.268932682782077, u'Contributing Op-Ed Writer: Aziz, We Tried to Warn You')
+(13.963942579298251, u'Contributing Op-Ed Writer: Why I\u2019m Ambivalent About Chelsea Manning')
+
+['amazon', 'nbsp', 'headquarters', 'today', 'news', 'second']
+(49.949693972093797, u"Amazon's second headquarters: The pros and cons of the finalists - USA TODAY")
+(6.6059896051130602, u'Where Amazon May Build Its New Headquarters')
+(3.1764217207505352, u'Asia and Australia Edition: North Korea, Amazon, Republicans: Your Friday Briefing')
+

@@ -3,6 +3,7 @@ import re, pdb, sys
 sys.path.append("/home/ubuntu/workspace/collective_intelligence")
 
 import numpy as np
+import nmf
 from ch6 import docclass
 from ch3 import clusters
 
@@ -93,7 +94,7 @@ def makematrix(allw,articlew):
 
 def showfeatures(w,h,titles,wordvec,out='features.txt'): 
   outfile=file(out,'w')  
-  pc,wc=shape(h)
+  pc,wc=np.shape(h)
   toppatterns=[[] for i in range(len(titles))]
   patternnames=[]
   
@@ -133,6 +134,7 @@ def showfeatures(w,h,titles,wordvec,out='features.txt'):
   return toppatterns,patternnames
 
 def showarticles(titles,toppatterns,patternnames,out='articles.txt'):
+  pdb.set_trace()
   outfile=file(out,'w')  
   
   # Loop over all the articles
@@ -154,6 +156,7 @@ def showarticles(titles,toppatterns,patternnames,out='articles.txt'):
 
 def wordmatrixfeatures(x):
   return [wordvec[w] for w in range(len(x)) if x[w] > 0]
+
 
 if __name__ == '__main__':
     # setting up matrix from feeds
@@ -197,4 +200,11 @@ if __name__ == '__main__':
     # a2 = np.array([[1,2,3],[4,5,6]])
     # print(a1 * a2)
     
-    
+    # Non-negative Matrix Factorization
+    # w, h = nmf.factorize(m1 * m2, pc=3, iter=100)
+    # print(w * h)
+    # print(m1 * m2)
+    v = np.matrix(wordmatrix)
+    weights, feat = nmf.factorize(v, pc=20, iter=50)
+    topp, pn = showfeatures(weights, feat, artt, wordvec)
+    showarticles(artt, topp, pn)
