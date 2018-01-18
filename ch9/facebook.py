@@ -99,8 +99,6 @@ class fbsession:
       results.append(int(n.firstChild.nodeValue))
     return results
   
-  
-
   def makedataset(self):
     from advancedclassify import milesdistance
     # Get all the info for all my friends
