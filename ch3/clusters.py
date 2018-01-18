@@ -162,24 +162,26 @@ def drawnode(draw, clust, x, y, scaling, labels):
         h2 = getheight(clust.right) * 20
         top = y - (h1 + h2) / 2
         bottom = y + (h1 + h2) / 2
-    # Line length
+        # Line length
         ll = clust.distance * scaling
-    # Vertical line from this cluster to children
+        # Vertical line from this cluster to children
         draw.line((x, top + h1 / 2, x, bottom - h2 / 2), fill=(255, 0, 0))
 
-    # Horizontal line to left item
+        # Horizontal line to left item
         draw.line((x, top + h1 / 2, x + ll, top + h1 / 2), fill=(255, 0, 0))
 
-    # Horizontal line to right item
-        draw.line((x, bottom - h2 / 2, x + ll, bottom - h2 / 2), fill=(255, 0,
-                  0))
+        # Horizontal line to right item
+        draw.line((x, bottom - h2 / 2, x + ll, bottom - h2 / 2), fill=(255, 0, 0))
 
-    # Call the function to draw the left and right nodes
+        # Call the function to draw the left and right nodes
         drawnode(draw, clust.left, x + ll, top + h1 / 2, scaling, labels)
         drawnode(draw, clust.right, x + ll, bottom - h2 / 2, scaling, labels)
     else:
-    # If this is an endpoint, draw the item label
-        draw.text((x + 5, y - 7), labels[clust.id], (0, 0, 0))
+        # If this is an endpoint, draw the item label
+        try:
+            draw.text((x + 5, y - 7), labels[clust.id], (0, 0, 0))
+        except Exception as e:
+            print("Probably a unicode symbol issue" + str(e))
 
 
 def rotatematrix(data):

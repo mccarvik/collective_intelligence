@@ -1,5 +1,10 @@
 import feedparser
 import re, pdb, sys
+sys.path.append("/home/ubuntu/workspace/collective_intelligence")
+
+import numpy as np
+from ch6 import docclass
+from ch3 import clusters
 
 
 feedlist=['http://today.reuters.com/rss/topNews',
@@ -36,6 +41,7 @@ def separatewords(text):
   splitter=re.compile('\\W*')
   return [s.lower() for s in splitter.split(text) if len(s)>3]
 
+
 def getarticlewords():
   allwords={}
   articlewords=[]
@@ -71,6 +77,7 @@ def getarticlewords():
     print("finsished " + feed)
   return allwords,articlewords,articletitles
 
+
 def makematrix(allw,articlew):
   wordvec=[]
   
@@ -83,7 +90,6 @@ def makematrix(allw,articlew):
   l1=[[(word in f and f[word] or 0) for word in wordvec] for f in articlew]
   return l1,wordvec
 
-from numpy import *
 
 def showfeatures(w,h,titles,wordvec,out='features.txt'): 
   outfile=file(out,'w')  
@@ -145,13 +151,50 @@ def showarticles(titles,toppatterns,patternnames,out='articles.txt'):
     outfile.write('\n')
     
   outfile.close()
-  
+
+def wordmatrixfeatures(x):
+  return [wordvec[w] for w in range(len(x)) if x[w] > 0]
 
 if __name__ == '__main__':
     # setting up matrix from feeds
     allw, artw, artt = getarticlewords()
     wordmatrix, wordvec = makematrix(allw, artw)
     
-    print(wordvec[0:10])
-    print(arrtt[1])
-    print(wordmatrix[1][0:10])
+    # Checking load
+    # print(wordvec[0:10])
+    # print(arrtt[1])
+    # print(wordmatrix[1][0:10])
+    
+    # Naive Bayes
+    # print(wordmatrixfeatures(wordmatrix[0]))
+    # classifier = docclass.naivebayes(wordmatrixfeatures)
+    # classifier.setdb('newtest.db')
+    # print(artt[0])
+    # # train this as an iraq story
+    # pdb.set_trace()
+    # classifier.train(wordmatrix[0], 'trump')
+    # print(artt[1])
+    # # train this as an india story
+    # classifier.train(wordmatrix[1], 'street')
+    # print(artt[2])
+    # print(classifier.classify(wordmatrix[2]))
+    
+    # Clustering
+    # clust = clusters.hcluster(wordmatrix)
+    # clusters.drawdendrogram(clust, artt, jpeg='news.jpeg')
+    
+    # Numpy exs
+    # l1 = [[1,2,3],[4,5,6]]
+    # print(l1)
+    # m1 = np.matrix(l1)
+    # print(m1)
+    # m2 = np.matrix([[1,2], [3,4], [5,6]])
+    # print(m2)
+    # print(m1 * m2)
+    # print(np.shape(m1))
+    # a1 = m1.A
+    # print(a1)
+    # a2 = np.array([[1,2,3],[4,5,6]])
+    # print(a1 * a2)
+    
+    
