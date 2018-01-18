@@ -1,12 +1,15 @@
+import pdb
 from random import random,randint,choice
 from copy import deepcopy
 from math import log
+
 
 class fwrapper:
   def __init__(self,function,childcount,name):
     self.function=function
     self.childcount=childcount
     self.name=name
+
 
 class node:
   def __init__(self,fw,children):
@@ -22,7 +25,7 @@ class node:
     for c in self.children:
       c.display(indent+1)
     
-
+# a node representing an index to call from a list of given parameters
 class paramnode:
   def __init__(self,idx):
     self.idx=idx
@@ -46,17 +49,19 @@ addw=fwrapper(lambda l:l[0]+l[1],2,'add')
 subw=fwrapper(lambda l:l[0]-l[1],2,'subtract') 
 mulw=fwrapper(lambda l:l[0]*l[1],2,'multiply')
 
+
 def iffunc(l):
   if l[0]>0: return l[1]
   else: return l[2]
 ifw=fwrapper(iffunc,3,'if')
 
+
 def isgreater(l):
   if l[0]>l[1]: return 1
   else: return 0
 gtw=fwrapper(isgreater,2,'isgreater')
-
 flist=[addw,mulw,ifw,gtw,subw]
+
 
 def exampletree():
   return node(ifw,[
@@ -66,20 +71,21 @@ def exampletree():
                   ]
               )
 
+
 def makerandomtree(pc,maxdepth=4,fpr=0.5,ppr=0.6):
   if random()<fpr and maxdepth>0:
     f=choice(flist)
-    children=[makerandomtree(pc,maxdepth-1,fpr,ppr) 
-              for i in range(f.childcount)]
+    children=[makerandomtree(pc,maxdepth-1,fpr,ppr) for i in range(f.childcount)]
     return node(f,children)
   elif random()<ppr:
     return paramnode(randint(0,pc-1))
   else:
     return constnode(randint(0,10))
-              
+
 
 def hiddenfunction(x,y):
     return x**2+2*y+3*x+5
+
 
 def buildhiddenset():
   rows=[]
@@ -88,6 +94,7 @@ def buildhiddenset():
     y=randint(0,40)
     rows.append([x,y,hiddenfunction(x,y)])
   return rows
+
 
 def scorefunction(tree,s):
   dif=0
@@ -125,8 +132,7 @@ def getrankfunction(dataset):
   
     
 
-def evolve(pc,popsize,rankfunction,maxgen=500,
-           mutationrate=0.1,breedingrate=0.4,pexp=0.7,pnew=0.05):
+def evolve(pc,popsize,rankfunction,maxgen=500, mutationrate=0.1,breedingrate=0.4,pexp=0.7,pnew=0.05):
   # Returns a random number, tending towards lower numbers. The lower pexp
   # is, more lower numbers you will get
   def selectindex():
@@ -229,6 +235,7 @@ def tournament(pl):
   z.sort()
   return z      
 
+
 class humanplayer:
   def evaluate(self,board):
 
@@ -265,5 +272,28 @@ class fwrapper:
     self.childcount=param
     self.name=name
     
+    
 #flist={'str':[substringw,concatw],'int':[indexw]}
 flist=[addw,mulw,ifw,gtw,subw]
+
+
+
+if __name__ == '__main__':
+    # extree = exampletree()
+    # print(extree.evaluate([2,3]))
+    # print(extree.evaluate([5,3]))
+    # extree.display()
+
+    # Random Trees
+    rand1 = makerandomtree(2)
+    print(rand1.evaluate([7,1]))
+    print(rand1.evaluate([2,4]))
+    rand2 = makerandomtree(2)
+    print(rand2.evaluate([5,3]))
+    print(rand2.evaluate([5,20]))
+    rand1.display()
+    rand2.display()
+    
+    # Testing solution
+    hiddenset = buildhiddenset()
+    
