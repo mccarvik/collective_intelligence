@@ -34,8 +34,8 @@ class paramnode:
     return inp[self.idx]
   def display(self,indent=0):
     print '%sp%d' % (' '*indent,self.idx)
-    
-    
+
+
 class constnode:
   def __init__(self,v):
     self.v=v
@@ -43,7 +43,7 @@ class constnode:
     return self.v
   def display(self,indent=0):
     print '%s%d' % (' '*indent,self.v)
-    
+
 
 addw=fwrapper(lambda l:l[0]+l[1],2,'add')
 subw=fwrapper(lambda l:l[0]-l[1],2,'subtract') 
@@ -113,15 +113,16 @@ def mutate(t,pc,probchange=0.1):
       result.children=[mutate(c,pc,probchange) for c in t.children]
     return result
 
+
 def crossover(t1,t2,probswap=0.7,top=1):
   if random()<probswap and not top:
     return deepcopy(t2) 
   else:
     result=deepcopy(t1)
     if hasattr(t1,'children') and hasattr(t2,'children'):
-      result.children=[crossover(c,choice(t2.children),probswap,0) 
-                       for c in t1.children]
+      result.children=[crossover(c,choice(t2.children),probswap,0) for c in t1.children]
     return result
+
 
 def getrankfunction(dataset):
   def rankfunction(population):
@@ -130,11 +131,9 @@ def getrankfunction(dataset):
     return scores
   return rankfunction
   
-    
 
 def evolve(pc,popsize,rankfunction,maxgen=500, mutationrate=0.1,breedingrate=0.4,pexp=0.7,pnew=0.05):
-  # Returns a random number, tending towards lower numbers. The lower pexp
-  # is, more lower numbers you will get
+  # Returns a random number, tending towards lower numbers. The lower pexp is, more lower numbers you will get
   def selectindex():
     return int(log(random())/log(pexp))
 
@@ -149,15 +148,13 @@ def evolve(pc,popsize,rankfunction,maxgen=500, mutationrate=0.1,breedingrate=0.4
     newpop=[scores[0][1],scores[1][1]]
     
     # Build the next generation
+    # randomly picks numbers (biased towards low numbers for better scores)
+    # Then tries mutations / crossovers to add to the population or may just add a new tree
     while len(newpop)<popsize:
       if random()>pnew:
-        newpop.append(mutate(
-                      crossover(scores[selectindex()][1],
-                                 scores[selectindex()][1],
-                                probswap=breedingrate),
-                        pc,probchange=mutationrate))
+        newpop.append(mutate(crossover(scores[selectindex()][1], scores[selectindex()][1], probswap=breedingrate), pc, probchange=mutationrate))
       else:
-      # Add a random node to mix things up
+        # Add a random node to mix things up
         newpop.append(makerandomtree(pc))
         
     population=newpop
@@ -177,9 +174,9 @@ def gridgame(p):
   
   # Put the second player a sufficient distance from the first
   location.append([(location[0][0]+2)%4,(location[0][1]+2)%4])
+  
   # Maximum of 50 moves before a tie
   for o in range(50):
-  
     # For each player
     for i in range(2):
       locs=location[i][:]+location[1-i][:]
@@ -207,7 +204,7 @@ def gridgame(p):
       if location[i]==location[1-i]: return i
   return -1
 
-
+# This is used as a ranking function in evolve for the best records to be sorted as they play against eachother
 def tournament(pl):
   # Count losses
   losses=[0 for p in pl]
@@ -271,8 +268,8 @@ class fwrapper:
     self.function=function
     self.childcount=param
     self.name=name
-    
-    
+  
+
 #flist={'str':[substringw,concatw],'int':[indexw]}
 flist=[addw,mulw,ifw,gtw,subw]
 
@@ -286,14 +283,43 @@ if __name__ == '__main__':
 
     # Random Trees
     rand1 = makerandomtree(2)
-    print(rand1.evaluate([7,1]))
-    print(rand1.evaluate([2,4]))
+    # print(rand1.evaluate([7,1]))
+    # print(rand1.evaluate([2,4]))
     rand2 = makerandomtree(2)
-    print(rand2.evaluate([5,3]))
-    print(rand2.evaluate([5,20]))
-    rand1.display()
-    rand2.display()
+    # print(rand2.evaluate([5,3]))
+    # print(rand2.evaluate([5,20]))
+    # rand1.display()
+    # rand2.display()
     
     # Testing solution
     hiddenset = buildhiddenset()
+    # print(scorefunction(rand1, hiddenset))
+    # print(scorefunction(rand2, hiddenset))
+    
+    # Mutating Programs
+    # rand2.display()
+    # muttree = mutate(rand2, 2)
+    # muttree.display()
+    # print(scorefunction(rand2, hiddenset))
+    # print(scorefunction(muttree, hiddenset))
+    
+    # Crossover Alterations
+    # rand1.display()
+    # rand2.display()
+    # cross = crossover(rand1, rand2)
+    # cross.display()
+    
+    # Building the Environment
+    # rf = getrankfunction(hiddenset)
+    # evolve(2, 500, rf, mutationrate=0.2, breedingrate=0.1, pexp=0.7, pnew=0.1)
+    
+    # Grid Game
+    # p1 = makerandomtree(5)
+    # p2 = makerandomtree(5)
+    # print(gridgame([p1, p2]))
+    
+    # Tournament
+    winner = evolve(5, 100, tournament, maxgen=10)
+    pdb.set_trace()
+    print(gridgame([winner, humanplayer()]))
     
